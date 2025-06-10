@@ -1,0 +1,4 @@
+nav a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
