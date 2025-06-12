@@ -1,13 +1,22 @@
+// --- Librairies React ---
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 
+// --- Styles globaux ---
+import 'bootstrap/dist/css/bootstrap.min.css' 
+import './index.css'                          
+
+// --- JavaScript de Bootstrap (pour le menu burger, etc.) ---
+import 'bootstrap/dist/js/bootstrap.bundle.min.js' 
+
+// --- React Router & Pages ---
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
 import routes from '~react-pages'
+
+// --- Composants globaux ---
 import Layout from '@/components/layout/Layout'
 
-
+// --- Configuration du routeur ---
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,8 +25,9 @@ const router = createBrowserRouter([
   },
 ])
 
+// --- Rendu ---
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
