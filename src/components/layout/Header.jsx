@@ -60,16 +60,17 @@ const Header = () => {
               <NavLink className="nav-link" to="/">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Centre">Centre</NavLink>
+              <NavLink className="nav-link" to="/Equipe">L'équipe bénévole</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Equipe">Équipe</NavLink>
+              <NavLink className="nav-link" to="/Centre">Accueil de Loisirs</NavLink>
             </li>
+            
             <li className="nav-item">
               <NavLink className="nav-link" to="/Peri">Périscolaire</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Resto">Cantine</NavLink>
+              <NavLink className="nav-link" to="/Resto">Restaurant scolaire</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Contact">Contact</NavLink>
