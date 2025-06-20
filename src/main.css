@@ -1,22 +1,26 @@
 @import "./variables.css";
-
+/*A SUPPRIMER APRES*/
 main {
-  border: 2px dashed red;
+  
   min-height: 300px;
-  margin-top: 1350px; /* adapte à la hauteur de ta navbar */
+  margin-top: 150px; /* adapte à la hauteur de ta navbar */
 }
 
-footer{
-  border: 2px dashed red;
-  min-height: 300px;
+/*A SUPPRIMER APRES*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 /* Style global */
 body {
   background-color: var(--color-background);
   font-family: var(--font-texte);
   color: var(--color-text);
-  padding: 2rem;
 }
 
 /* Blocs couleur */

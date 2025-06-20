@@ -1,7 +1,7 @@
 :root {
   /* 🎨 Couleurs fonctionnelles */
-  --color-primary: #FFD93D;
-  --color-background: #FFF9F1;
+  --color-primary: #D4A600;
+  --color-background: rgba(255, 249, 241, 0.90);
   --color-text: #444444;
   --color-accent: #FF6B6B;
   --color-secondary: #A0D2EB;

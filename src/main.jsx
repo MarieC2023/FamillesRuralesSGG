@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 
 // --- Styles globaux ---
 import 'bootstrap/dist/css/bootstrap.min.css' 
-import './index.css'                          
+import './main.css'                          
 
 // --- JavaScript de Bootstrap (pour le menu burger, etc.) ---
 import 'bootstrap/dist/js/bootstrap.bundle.min.js' 

@@ -1,0 +1,46 @@
+
+/* Carte activité */
+.carte-activite {
+  width: 460px;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-secondary);
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-family: var(--font-texte);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.carte-activite h3 {
+  font-family: var(--font-titre);
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.carte-activite p {
+  margin: 0.2rem 0;
+}
+
+.carte-activite p:first-of-type {
+  margin: 0 0 1rem;
+}
+
+/* TABLETTE : max-width 768px */
+@media (max-width: 768px) {
+  .carte-activite {
+    width: 100%;
+  }
+}
+
+/* MOBILE LARGE : max-width 425px */
+@media (max-width: 425px) {
+  .carte-activite {
+    padding: 1rem;
+  }
+}
+
+/* MOBILE PETIT : max-width 320px */
+@media (max-width: 320px) {
+  .carte-activite {
+    padding: 0.8rem;
+  }
+}

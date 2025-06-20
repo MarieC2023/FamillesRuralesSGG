@@ -1,0 +1,69 @@
+/* Suppression des puces pour les listes */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* liens téléchargeables dans documents */
+.lien-telechargement {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-accent);
+  font-family: var(--font-texte);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--rayon-bouton);
+  display: inline-block;
+  transition: background-color var(--transition), color var(--transition), padding var(--transition), box-shadow var(--transition);
+}
+
+.lien-telechargement::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: var(--rayon-bouton);
+  transition: width 0.3s ease;
+}
+
+.lien-telechargement:hover::after,
+.lien-telechargement:focus::after {
+  width: 100%;
+}
+
+.lien-telechargement:hover,
+.lien-telechargement:focus {
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  text-decoration: none;
+}
+
+.lien-telechargement:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.4), 0 0 8px rgba(255, 107, 107, 0.6);
+  border-radius: var(--rayon-bouton);
+}
+
+/* MOBILE LARGE : max-width 425px */
+@media (max-width: 425px) {
+  .lien-telechargement {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+/* MOBILE PETIT : max-width 320px */
+@media (max-width: 320px) {
+  .lien-telechargement {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
