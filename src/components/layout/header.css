@@ -22,7 +22,7 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
 }
 
 .logoNav {
-  height: 60px; 
+  height: 60px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -35,9 +35,9 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  color: var(--color-accent); 
+  color: var(--color-accent);
   border-color: var(--color-accent);
-  
+
 }
 
 .navbar-toggler-icon {
@@ -118,6 +118,15 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
   .nav-link {
     font-size: 1.1rem;
   }
+
+  .navbar-container {
+    background-color: var(--color-background-opaque);
+    padding: 1rem;
+    border-radius: 0 0 var(--rayon-bouton, 12px) var(--rayon-bouton, 12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -171,7 +180,7 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
 
   .logoNav {
     height: 30px;
- 
+
   }
 
   .navbar-toggler {

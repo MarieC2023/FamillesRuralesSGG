@@ -1,16 +1,18 @@
+/* ===== FOOTER BASE ===== */
+
 .footer {
-  background-color: var(--color-text); /* ou une autre couleur de fond */
+  background-color: var(--color-text); 
   color: var(--color-background);
   padding: var(--spacing-l) 0;
   border-top: 2px solid var(--color-primary);
-  width: 100vw; /* s’assure que ça prend toute la largeur de la fenêtre */
+  width: 100vw; 
   overflow-x: hidden;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-l); /* ou 1rem si pas de variables */
+  padding: 0 var(--spacing-l); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +29,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* utile pour les petits écrans */
+  flex-wrap: wrap; 
   width: 100%;
   max-width: 900px;
-  margin: 1rem auto; /* centré horizontalement dans le container */
+  margin: 1rem auto; 
   text-align: left;
 }
-
-
 
 .footer-text {
   font-size: 0.95rem;
@@ -59,4 +59,77 @@
 .icon-instagram {
   width: 24px;
   height: 24px;
+}
+
+
+/* ===== TABLETTE : max 992px ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 var(--spacing-m);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+
+/* ===== MOBILE : max 576px ===== */
+@media (max-width: 576px) {
+  .footer {
+    padding: var(--spacing-m) 0;
+  }
+
+  .footer-logo {
+    width: 300px;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+  }
+
+  .footer-icons {
+    gap: 0.75rem;
+  }
+
+  .icon-facebook,
+  .icon-instagram {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ===== MOBILE PETIT : max 320px ===== */
+@media (max-width: 320px) {
+  .footer-logo {
+    width: 250px;
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .icon-facebook,
+  .icon-instagram {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-icons {
+    gap: 0.5rem;
+  }
 }
