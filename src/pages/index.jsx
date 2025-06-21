@@ -12,6 +12,9 @@ import './index.css';
 const Index = () => {
     return (
         <div className="wrapper homepage">
+            <h1 className="page-title text-center mb-5">
+                Un lieu d’accueil convivial pour les enfants de Saint-Georges-des-Gardes
+            </h1>
             {/* Titre & introduction */}
             <section className="hero d-flex flex-column flex-md-row align-items-center gap-8">
                 {/* Colonne image */}

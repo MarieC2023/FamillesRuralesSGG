@@ -1,92 +1,117 @@
+/* === IMPORT DES VARIABLES === */
 @import "./variables.css";
-/*A SUPPRIMER APRES*/
-main {
-  
-  min-height: 300px;
-  margin-top: 150px; /* adapte à la hauteur de ta navbar */
-}
 
-/*A SUPPRIMER APRES*/
-
-/* Reset */
+/* === RESET DE BASE === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* Style global */
+/* === STYLE GLOBAL DU BODY === */
 body {
   background-color: var(--color-background);
   font-family: var(--font-texte);
   color: var(--color-text);
 }
 
-/* Blocs couleur */
-.bloc-couleur {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+main{
+  margin-top: 150px;
 }
 
-.carre {
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+/* === STRUCTURE PRINCIPALE === */
+.wrapper {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
 }
 
-/* Démo police */
-.demo-police {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-left: 4px solid var(--color-accent);
-  background-color: var(--color-background);
-}
-
-/* Bouton */
-.bouton {
-  background-color: var(--color-accent);
-  color: white;
-  padding: 0.6em 1.2em;
-  border: none;
-  border-radius: var(--rayon-bouton);
-  font-family: var(--font-texte);
-  cursor: pointer;
-  transition: transform var(--transition), background-color var(--transition);
-}
-
-.bouton:hover {
-  transform: scale(1.05);
-  background-color: #ff4d4d;
-}
-
-/* Carte activité */
-.carte-activite {
-  background-color: var(--color-background);
-  border: 2px solid var(--color-secondary);
-  border-radius: 16px;
-  padding: 1.5rem;
-  max-width: 400px;
-  font-family: var(--font-texte);
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.carte-activite h3 {
+/* === TITRES === */
+h1 {
   font-family: var(--font-titre);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: var(--font-titre);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* === PARAGRAPHES === */
+p {
+  font-family: var(--font-texte);
   color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+
+/* === LISTES === */
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
   margin-bottom: 0.5rem;
 }
 
-.carte-activite p {
-  margin: 0.2rem 0;
+/* === RESPONSIVE GLOBAL === */
+
+/* TABLETTE : max-width 768px */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  p:last-of-type {
+    margin-bottom: 2rem;
+  }
 }
 
-.carte-activite p:first-of-type {
-  margin: 0 0 1rem;
+/* MOBILE LARGE : max-width 425px */
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* MOBILE PETIT : max-width 320px */
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }

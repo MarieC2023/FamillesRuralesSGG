@@ -25,7 +25,7 @@
 
 .bouton:hover {
   background-color: var(--color-accent);
-  color: var(--color-background); /* Texte devient blanc cassé ou fond clair */
+  color: var(--color-background); 
   transform: scale(1.05);
 }
 
