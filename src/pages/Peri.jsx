@@ -56,6 +56,22 @@ const Peri = () => {
                     <NavLink to="/Contact" className="bouton mt-4">Nous contacter</NavLink>
                 </div>
             </section>
+
+             <section className="documents-section mt-5">
+                <h2>Documents pour inscriptions</h2>
+                <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
+                    <div className="carte-activite">
+                        <h3>🧒 Périscolaire</h3>
+                        <p>Téléchargez les documents nécessaires à l’inscription :</p>
+                        <ul>
+                            <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
+                            <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
+                            <li><a href="/docs/ReglementInterieurPeriCentre.pdf" className="lien-telechargement" download>Règlement intérieur</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
