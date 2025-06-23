@@ -1,0 +1,47 @@
+.periscolaire-page {
+  margin-bottom: 3rem;
+}
+
+.periscolaire-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.periscolaire-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.img-placeholder {
+  background-color: #e0e0e0;
+  color: #555;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+  font-style: italic;
+}
+
+.periscolaire-texte {
+  flex: 2;
+}
+
+.periscolaire-texte ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.periscolaire-texte li {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .periscolaire-section {
+    flex-direction: column;
+  }
+
+  .periscolaire-image,
+  .periscolaire-texte {
+    max-width: 100%;
+  }
+}
