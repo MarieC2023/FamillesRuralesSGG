@@ -12,7 +12,7 @@ import './index.css';
 const Index = () => {
     return (
         <div className="wrapper homepage">
-            <h1 className="page-title text-center mb-5">
+            <h1 className="text-center mb-5">
                 Un lieu d’accueil convivial pour les enfants de Saint-Georges-des-Gardes
             </h1>
             {/* Titre & introduction */}

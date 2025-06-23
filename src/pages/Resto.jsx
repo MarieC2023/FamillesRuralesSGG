@@ -7,7 +7,7 @@ import './resto.css';
 const Resto = () => {
     return (
         <div className="wrapper resto-page">
-            <h1 className="page-title text-center mb-5">
+            <h1 className="text-center mb-5">
                 Restaurant scolaire
             </h1>
 

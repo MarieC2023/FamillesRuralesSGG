@@ -1,0 +1,214 @@
+/* SECTION CONTACT */
+.contact-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TITRES */
+.page-title {
+  font-family: var(--font-titre);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-family: var(--font-titre);
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+/* INTRO IMAGE + TEXTE */
+.intro-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.intro-photo {
+  flex: 1;
+  max-width: 35%;
+  background-color: #ddd;
+  color: #555;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.intro-texte {
+  flex: 2;
+  font-family: var(--font-texte);
+  font-size: 1.1rem;
+  color: var(--color-muted);
+}
+
+/* FORMULAIRES */
+.formulaires-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* COORDONNÉES */
+.coordonnees-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.coordonnees-container .carte-activite {
+  flex: 1 1 calc((100% - 4rem) / 3);
+  max-width: calc((100% - 4rem) / 3);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-secondary);
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-family: var(--font-texte);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coordonnees-container .carte-activite h3 {
+  font-family: var(--font-titre);
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  min-height: 3em; /* Assure une hauteur constante */
+}
+
+.coordonnees-container .carte-activite p {
+  margin: 0.2rem 0;
+}
+
+.coordonnees-container .carte-activite p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+/* Ligne contact (Téléphone / Email) */
+.ligne-contact {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.ligne-contact strong {
+  white-space: nowrap;
+}
+
+.coord-highlight {
+  font-weight: 700;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.coord-link {
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.coord-link:hover,
+.coord-link:focus {
+  text-decoration: underline;
+}
+
+/* Carte Réseaux sociaux */
+.contact-reseaux {
+  text-align: center;
+  align-items: center;
+}
+
+.contact-reseaux .footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-reseaux .footer-icons a {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-reseaux .footer-icons a:hover,
+.contact-reseaux .footer-icons a:focus {
+  color: var(--color-text);
+}
+
+.contact-reseaux .icon-facebook,
+.contact-reseaux .icon-instagram {
+  width: 56px;
+  height: 56px;
+}
+
+/* RESPONSIVE TABLETTE */
+@media (max-width: 1024px) {
+  .coordonnees-container .carte-activite {
+    flex: 1 1 calc((100% - 2rem) / 2);
+    max-width: calc((100% - 2rem) / 2);
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  .intro-contact {
+    flex-direction: column;
+  }
+
+  .intro-photo,
+  .intro-texte {
+    max-width: 100%;
+  }
+
+  .formulaires-container,
+  .coordonnees-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coordonnees-container .carte-activite {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* RESPONSIVE MOBILE LARGE */
+@media (max-width: 425px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .carte-activite {
+    padding: 1rem;
+  }
+}
+
+/* RESPONSIVE MOBILE PETIT */
+@media (max-width: 320px) {
+  .carte-activite {
+    padding: 0.8rem;
+  }
+}

@@ -7,7 +7,7 @@ import './peri.css';
 const Peri = () => {
     return (
         <div className="wrapper periscolaire-page">
-            <h1 className="page-title text-center mb-5">
+            <h1 className="text-center mb-5">
                 Périscolaire – Péricentre
             </h1>
 

@@ -7,7 +7,7 @@ import './equipe.css';
 const Equipe = () => {
     return (
         <div className="wrapper equipe-page">
-            <h1 className="page-title text-center mb-5">
+            <h1 className="text-center mb-5">
                 Rejoignez l’équipe des bénévoles !
             </h1>
 

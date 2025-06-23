@@ -7,7 +7,7 @@ import './centre.css';
 const Centre = () => {
     return (
         <div className="wrapper centre-page">
-            <h1 className="page-title text-center mb-5">
+            <h1 className="text-center mb-5">
                 Accueil de Loisirs — Mercredi et Vacances scolaires
             </h1>
             {/* Carrousel photos des activités — à intégrer plus tard */}
