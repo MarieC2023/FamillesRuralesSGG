@@ -1,0 +1,47 @@
+.resto-page {
+  margin-bottom: 3rem;
+}
+
+.resto-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resto-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.img-placeholder {
+  background-color: #e0e0e0;
+  color: #555;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+  font-style: italic;
+}
+
+.resto-texte {
+  flex: 2;
+}
+
+.resto-texte ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.resto-texte li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .resto-section {
+    flex-direction: column;
+  }
+
+  .resto-image,
+  .resto-texte {
+    max-width: 100%;
+  }
+}

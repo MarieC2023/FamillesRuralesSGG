@@ -1,9 +1,56 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '@partials/buttons.css';
+import '@partials/links.css';
+import './resto.css';
 
 const Resto = () => {
     return (
-        <div>
-            PAGE RESTAURANT SCOLAIRE
+        <div className="wrapper resto-page">
+            <h1 className="page-title text-center mb-5">
+                Restaurant scolaire
+            </h1>
+
+            <section className="resto-section d-flex flex-column flex-md-row align-items-start gap-5">
+                {/* Colonne image */}
+                <div className="resto-image placeholder">
+                    <div className="img-placeholder">Photo du restaurant scolaire à venir</div>
+                </div>
+
+                {/* Colonne texte */}
+                <div className="resto-texte">
+                    <p>
+                        Les petits et grands écoliers sont accueillis avec chaleur par Audrey, Maryline, Sarah, Jessica, Laurence,
+                        et toute une équipe de bénévoles dynamiques.
+                    </p>
+                    <p>
+                        Sandra, notre cuisinière, prépare chaque jour des repas équilibrés et savoureux.
+                    </p>
+
+                    <h2>Appel aux bénévoles</h2>
+                    <p>
+                        Vous avez envie de donner un coup de main pour le service, rencontrer les enfants et participer à la vie de l’école ?<br />
+                        Nous serons ravis de vous accueillir parmi nous !
+                    </p>
+
+                    <NavLink to="/Contact" className="bouton mt-4">Nous contacter</NavLink>
+                </div>
+            </section>
+
+            {/* Documents d’inscription */}
+            <section className="documents-section mt-5">
+                <h2>Documents pour inscriptions</h2>
+                <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
+                    <div className="carte-activite">
+                        <h3>🍽️ Restaurant scolaire</h3>
+                        <p>Téléchargez les documents nécessaires à l’inscription :</p>
+                        <ul>
+                            <li><a href="/docs/BulletinInscriptionCantine.pdf" className="lien-telechargement" download>Bulletin d’inscription cantine</a></li>
+                            <li><a href="/docs/ReglementInterieur.pdf" className="lien-telechargement" download>Règlement intérieur</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
