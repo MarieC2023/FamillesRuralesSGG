@@ -1,0 +1,48 @@
+.equipe-page {
+  margin-bottom: 3rem;
+}
+
+.equipe-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.equipe-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.img-placeholder {
+  background-color: #e0e0e0;
+  color: #555;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+  font-style: italic;
+}
+
+.equipe-texte {
+  flex: 2;
+}
+
+.equipe-texte ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.equipe-texte li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .equipe-section {
+    flex-direction: column;
+  }
+
+  .equipe-image,
+  .equipe-texte {
+    max-width: 100%;
+  }
+}
