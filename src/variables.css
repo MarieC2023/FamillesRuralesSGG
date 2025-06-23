@@ -8,6 +8,11 @@
   --color-secondary: #A0D2EB;
   --color-muted: #A3D9A5;
 
+  --color-success: #71c987; 
+  --color-error: #ff7f7f; 
+
+
+
   /* ✍️ Polices */
   --font-titre: 'Baloo 2', cursive;
   --font-texte: 'Poppins', sans-serif;
