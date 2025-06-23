@@ -77,7 +77,7 @@ const FormulaireContact = ({ id, titre, action }) => {
     >
       <h3>{titre}</h3>
       <div className="form-group">
-        <label htmlFor={`nom-${id}`}>Nom</label>
+        <label htmlFor={`nom-${id}`}>Nom et Prénom</label>
         <input type="text" id={`nom-${id}`} name="nom" required />
       </div>
       <div className="form-group">

@@ -48,7 +48,7 @@ const Contact = () => {
                     <p><strong>Téléphone :</strong> <span className="coord-highlight">02 41 29 13 09</span></p>
                     <p>
                         <strong>Email :</strong>{" "}
-                        <p></p>
+                        <br />
                         <a href="mailto:ocom3pommes@hotmail.fr" className="coord-link">
                             ocom3pommes@hotmail.fr
                         </a>
@@ -60,7 +60,7 @@ const Contact = () => {
                     <p><strong>Téléphone :</strong> <span className="coord-highlight">02 41 62 92 64</span></p>
                     <p>
                         <strong>Email :</strong>{" "}
-                        <p></p>
+                        <br />
                         <a href="mailto:alabonnefourchette49@gmail.com" className="coord-link">
                             alabonnefourchette49@gmail.com
                         </a>
