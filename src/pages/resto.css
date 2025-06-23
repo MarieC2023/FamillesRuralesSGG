@@ -2,12 +2,56 @@
   margin-bottom: 3rem;
 }
 
+/* Section contenant texte + images */
 .resto-section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+/* Bloc contenant les deux images */
+.resto-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Styles des images */
+.resto-images img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+.resto-img-doc {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .resto-img-doc {
+    max-width: 100%;
+  }
+}
+
+
+/* Texte */
+.resto-texte {
+  flex: 2;
+}
+
+.resto-texte ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.resto-texte li {
+  margin-bottom: 0.5rem;
+}
+
+/* Ancienne image seule (placeholder) — si jamais tu la réutilises */
 .resto-image {
   flex: 1;
   max-width: 35%;
@@ -22,26 +66,32 @@
   font-style: italic;
 }
 
-.resto-texte {
-  flex: 2;
-}
+/* Responsive tablette et mobile */
+@media (min-width: 1024px) {
+  .resto-section {
+    flex-direction: row;
+    gap: 4rem;
+  }
 
-.resto-texte ul {
-  padding-left: 1.2rem;
-  margin-bottom: 1.5rem;
-}
+  .resto-images {
+    flex: 1;
+    max-width: 35%;
+  }
 
-.resto-texte li {
-  margin-bottom: 0.5rem;
+  .resto-texte {
+    flex: 2;
+  }
 }
 
 @media (max-width: 768px) {
   .resto-section {
     flex-direction: column;
+    gap: 2rem;
   }
 
-  .resto-image,
-  .resto-texte {
+  .resto-images,
+  .resto-texte,
+  .resto-image {
     max-width: 100%;
   }
 }

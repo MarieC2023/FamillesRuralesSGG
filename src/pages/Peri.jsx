@@ -4,6 +4,10 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './peri.css';
 
+import intPeri from '@/assets/peri1.webp';
+import extPeri from '@/assets/peri2.webp';
+
+
 const Peri = () => {
     return (
         <div className="wrapper periscolaire-page">
@@ -13,26 +17,35 @@ const Peri = () => {
 
             <section className="periscolaire-section d-flex flex-column flex-md-row align-items-start gap-5">
                 {/* Colonne image */}
-                <div className="periscolaire-image placeholder">
-                    <div className="img-placeholder">Photo du périscolaire à venir</div>
+                <div className="periscolaire-images d-flex flex-column gap-4">
+                    <img
+                        src={intPeri}
+                        alt="Salle de la périscolaire"
+                        className="img-fluid rounded"
+                    />
+                    <img
+                        src={extPeri}
+                        alt="Cour de la périscolaire"
+                        className="img-fluid rounded"
+                    />
                 </div>
 
                 {/* Colonne texte */}
                 <div className="periscolaire-texte">
                     <p>
-                        L’accueil périscolaire de Saint Georges des Gardes est déclaré auprès 
-                        de la Direction Départementale de la Cohésion Sociale (DDCS) et 
-                        respecte la réglementation en vigueur. 
+                        L’accueil périscolaire de Saint Georges des Gardes est déclaré auprès
+                        de la Direction Départementale de la Cohésion Sociale (DDCS) et
+                        respecte la réglementation en vigueur.
                         Il bénéficie également du soutien de la Protection Maternelle et Infantile (PMI).
                     </p>
                     <p>
-                        Il répond aux besoins des familles dont les contraintes professionnelles ne coïncident 
-                        pas toujours avec les horaires scolaires, en offrant un cadre sécurisé, 
+                        Il répond aux besoins des familles dont les contraintes professionnelles ne coïncident
+                        pas toujours avec les horaires scolaires, en offrant un cadre sécurisé,
                         convivial et souple.
                     </p>
-                     <p>
-                        Ce temps d’accueil permet aux enfants de se retrouver dans un lieu qu’ils peuvent 
-                        s’approprier, propice à la détente, au jeu et à la socialisation, 
+                    <p>
+                        Ce temps d’accueil permet aux enfants de se retrouver dans un lieu qu’ils peuvent
+                        s’approprier, propice à la détente, au jeu et à la socialisation,
                         sous l’encadrement d’une équipe diplômée et bienveillante.
                     </p>
 
@@ -57,7 +70,7 @@ const Peri = () => {
                 </div>
             </section>
 
-             <section className="documents-section mt-5">
+            <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
                 <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
                     <div className="carte-activite">

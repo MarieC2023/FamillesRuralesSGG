@@ -4,6 +4,10 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './centre.css';
 
+import entreePeri from '@/assets/entreePeri.webp';
+import intPeri from '@/assets/peri1.webp';
+import extPeri from '@/assets/peri2.webp';
+
 const Centre = () => {
     return (
         <div className="wrapper centre-page">
@@ -18,9 +22,24 @@ const Centre = () => {
 
             <section className="centre-section d-flex flex-column flex-md-row align-items-start gap-5">
                 {/* Colonne image (à venir : photo de l’équipe) */}
-                <div className="centre-image placeholder">
-                    <div className="img-placeholder">Photo de l’équipe à venir</div>
+                <div className="periscolaire-images d-flex flex-column gap-4">
+                    <img
+                        src={entreePeri}
+                        alt="Entrée de la périscolaire"
+                        className="img-fluid rounded"
+                    />
+                    <img
+                        src={intPeri}
+                        alt="Salle de la périscolaire"
+                        className="img-fluid rounded"
+                    />
+                    <img
+                        src={extPeri}
+                        alt="Cour de la périscolaire"
+                        className="img-fluid rounded"
+                    />
                 </div>
+
 
                 {/* Colonne texte */}
                 <div className="centre-texte">

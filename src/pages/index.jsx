@@ -21,7 +21,7 @@ const Index = () => {
                 <div className="hero-image">
                     <img
                         src={entreePeri}
-                        alt="Entrée du périscolaire"
+                        alt="Entrée de la périscolaire"
                         className="img-fluid rounded"
                     />
                 </div>

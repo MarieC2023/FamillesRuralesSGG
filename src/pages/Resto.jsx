@@ -4,6 +4,9 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './resto.css';
 
+import extCantine from '@/assets/cantine.webp';
+import intCantine from '@/assets/cantine2.webp';
+
 const Resto = () => {
     return (
         <div className="wrapper resto-page">
@@ -13,8 +16,12 @@ const Resto = () => {
 
             <section className="resto-section d-flex flex-column flex-md-row align-items-start gap-5">
                 {/* Colonne image */}
-                <div className="resto-image placeholder">
-                    <div className="img-placeholder">Photo du restaurant scolaire à venir</div>
+                <div className="resto-images">
+                    <img
+                        src={extCantine}
+                        alt="Vue extérieure du restaurant scolaire"
+                        className="img-fluid rounded"
+                    />
                 </div>
 
                 {/* Colonne texte */}
@@ -49,9 +56,15 @@ const Resto = () => {
                             <li><a href="/docs/ReglementInterieur.pdf" className="lien-telechargement" download>Règlement intérieur</a></li>
                         </ul>
                     </div>
+
+                    <img
+                        src={intCantine}
+                        alt="Salle intérieure du restaurant scolaire"
+                        className="img-fluid rounded resto-img-doc"
+                    />
                 </div>
             </section>
-        </div>
+        </div >
     );
 };
 
