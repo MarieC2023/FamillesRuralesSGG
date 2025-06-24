@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Collapse from 'bootstrap/js/dist/collapse'; 
 import logo from '@/assets/logo.png';
-import './Header.css';
+import './header.css';
 
 const Header = () => {
   // Changement de couleur au scroll

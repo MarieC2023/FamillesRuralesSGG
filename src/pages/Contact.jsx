@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import FormulaireContact from "../components/partials/FormulaireContact";
+import FormulaireContact from "@partials/FormulaireContact";
 
 const Contact = () => {
     return (
