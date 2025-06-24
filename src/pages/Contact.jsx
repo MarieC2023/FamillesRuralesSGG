@@ -16,13 +16,19 @@ const Contact = () => {
                     <p>Merci de sélectionner le formulaire qui correspond à votre demande :</p>
 
                     <p>
-                        <strong>Formulaire Périscolaire / Centre de loisirs :</strong><br />
-                        Pour toute question concernant les horaires, inscriptions, fonctionnement ou pour toute proposition de participation à la vie de l’association (engagement bénévole).
+                        <strong>Formulaire Périscolaire / Centre de loisirs :</strong>
                     </p>
-
                     <p>
-                        <strong>Formulaire Cantine :</strong><br />
-                        Pour toute question relative aux repas, menus, inscriptions ou fonctionnement de la cantine.
+                        Pour toute question concernant les horaires, inscriptions, fonctionnement.
+                    </p>
+                    <p>
+                        Pour toute proposition de participation à la vie de l’association (engagement bénévole).
+                    </p>
+                    <p>
+                        <strong>Formulaire Restaurant scolaire :</strong>
+                    </p>
+                    <p>
+                        Pour toute question relative aux repas, menus, inscriptions ou fonctionnement de la restauration scolaire.
                     </p>
                 </div>
             </div>

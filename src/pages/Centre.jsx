@@ -15,10 +15,10 @@ const Centre = () => {
                 Accueil de Loisirs — Mercredi et Vacances scolaires
             </h1>
             {/* Carrousel photos des activités — à intégrer plus tard */}
-            <section className="carrousel-photos mt-5">
+            {/* <section className="carrousel-photos mt-5">
                 <h2>En images</h2>
                 <div className="img-placeholder">[Carrousel des photos à venir]</div>
-            </section>
+            </section> */}
 
             <section className="centre-section d-flex flex-column flex-md-row align-items-start gap-5">
                 {/* Colonne image (à venir : photo de l’équipe) */}
@@ -69,12 +69,12 @@ const Centre = () => {
                                 ➔ Plus d’informations sur le péricentre
                             </NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <strong>Péri-centre :</strong>
                             <NavLink to="/Peri" className="bouton bouton-secondaire ms-2">
                                 ➔ En savoir plus
                             </NavLink>
-                        </li>
+                        </li> */}
 
 
                     </ul>

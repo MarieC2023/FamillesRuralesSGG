@@ -14,7 +14,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import routes from '~react-pages'
 
 // --- Composants globaux ---
-import Layout from '@/components/layout/Layout'
+import Layout from '@/components/layout/layout.jsx'
 
 // --- Configuration du routeur ---
 const router = createBrowserRouter([
