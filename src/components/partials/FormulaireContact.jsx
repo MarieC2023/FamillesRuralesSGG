@@ -24,20 +24,14 @@ const FormulaireContact = ({ id, titre, action }) => {
     // Honeypot anti-bot
     if (data.get("website")) return;
 
-    // Sécurité : détection script
+    // Détection de script malveillant
     const scriptRegex = /<\s*script\b[^>]*>(.*?)<\s*\/\s*script>/gi;
-    let hasMaliciousContent = false;
-    for (let [_, value] of data.entries()) {
+    for (let [, value] of data.entries()) {
       if (typeof value === "string" && scriptRegex.test(value)) {
-        hasMaliciousContent = true;
-        break;
+        setSuccess(false);
+        setMessage("Le contenu du formulaire contient du code interdit.");
+        return;
       }
-    }
-
-    if (hasMaliciousContent) {
-      setSuccess(false);
-      setMessage("Le contenu du formulaire contient du code interdit.");
-      return;
     }
 
     try {
@@ -76,25 +70,31 @@ const FormulaireContact = ({ id, titre, action }) => {
       aria-busy="false"
     >
       <h3>{titre}</h3>
+
       <div className="form-group">
         <label htmlFor={`nom-${id}`}>Nom et Prénom</label>
         <input type="text" id={`nom-${id}`} name="nom" required />
       </div>
+
       <div className="form-group">
         <label htmlFor={`email-${id}`}>Email</label>
         <input type="email" id={`email-${id}`} name="email" required />
       </div>
+
       <div className="form-group">
         <label htmlFor={`message-${id}`}>Message</label>
         <textarea id={`message-${id}`} name="message" rows="5" required />
       </div>
+
       <div className="honeypot hidden-honeypot">
         <label htmlFor={`website-${id}`}>Ne pas remplir ce champ</label>
         <input type="text" id={`website-${id}`} name="website" />
       </div>
+
       <button type="submit" className="bouton mt-3" disabled={isSubmitting}>
         {isSubmitting ? "Envoi..." : "Envoyer"}
       </button>
+
       {message && (
         <div
           className={`form-message ${
