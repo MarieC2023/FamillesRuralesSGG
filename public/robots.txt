@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://familles-rurales-sgg.vercel.app/sitemap.xml
