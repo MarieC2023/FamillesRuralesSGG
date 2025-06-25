@@ -15,13 +15,15 @@ import routes from '~react-pages'
 
 // --- Composants globaux ---
 import Layout from '@/components/layout/layout.jsx'
+import NotFound from './pages/404'
+
 
 // --- Configuration du routeur ---
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
-    children: routes,
+    children: [...routes, { path: '*', element: <NotFound/> }],
   },
 ])
 
