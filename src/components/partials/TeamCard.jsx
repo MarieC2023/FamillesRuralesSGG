@@ -3,7 +3,7 @@ function TeamCard({ prenom, fonction, presentation, image, typeImage }) {
     <div className="team-card">
       <div className="team-image">
         <img
-          src={`/src/assets/${image}`}
+          src={`/assets/${image}`}
           alt={prenom ? `Portrait de ${prenom}` : "Portrait illustré"}
           className={typeImage === "photo" ? "photo" : "illustration"}
         />
