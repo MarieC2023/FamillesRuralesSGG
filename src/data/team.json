@@ -1,0 +1,58 @@
+[
+  {
+    "prenom": "Kévin",
+    "fonction": "Directeur",
+    "presentation": "blablabla",
+    "image": "kevin.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Sarah",
+    "fonction": "Animatrice (midi, périscolaire et mercredi)",
+    "presentation": "blablabla",
+    "image": "sarah.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Audrey",
+    "fonction": "Animatrice et responsable de la restauration scolaire",
+    "presentation": "blablabla",
+    "image": "audrey.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Sandra",
+    "fonction": "Cuisinière",
+    "presentation": "blablabla",
+    "image": "sandra.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Maryline",
+    "fonction": "Animatrice (midi et mercredi)",
+    "presentation": "blablabla",
+    "image": "maryline.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Jessica",
+    "fonction": "Animatrice (temps du midi)",
+    "presentation": "blablabla",
+    "image": "jessica.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Laurence",
+    "fonction": "Animatrice (temps du midi)",
+    "presentation": "blablabla",
+    "image": "laurence.webp",
+    "typeImage": "photo"
+  },
+  {
+    "prenom": "Estelle",
+    "fonction": "Animatrice (temps périscolaire)",
+    "presentation": "blablabla",
+    "image": "illustration1.webp",
+    "typeImage": "illustration"
+  }
+]

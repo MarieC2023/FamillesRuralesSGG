@@ -1,0 +1,69 @@
+.teamanim-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Nouveau style harmonisé */
+.teamanim-wrapper h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.teamanim-wrapper .intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.team-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.team-image img.photo {
+  border-radius: 50%;
+}
+
+.team-image img.illustration {
+  width: 100px;
+  height: auto;
+  border-radius: 0;
+}
+
+.team-card h2 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.2rem;
+}
+
+.team-card .fonction {
+  font-style: italic;
+}
+
+.team-card .presentation {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
