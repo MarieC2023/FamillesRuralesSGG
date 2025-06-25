@@ -5,7 +5,7 @@ import "./notfound.css"
 const NotFound = () => {
   return (
     <div className="wrapper notfound-page">
-      <h1>404 - Page non trouvée</h1>
+      <h1 className="text-center mb-5">404 - Page non trouvée</h1>
       <img src="src/assets/404.webp" alt="Page non trouvée" className="img-404" />
 
       <p>Oups ! Cette page n'existe pas.</p>

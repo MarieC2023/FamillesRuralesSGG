@@ -14,7 +14,6 @@
 
 .programmes h2,
 .documents-section h2 {
-  /* h2 a déjà une base dans main.css, tu peux adapter ici si besoin */
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
