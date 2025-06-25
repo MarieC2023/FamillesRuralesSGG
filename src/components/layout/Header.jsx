@@ -60,7 +60,7 @@ const Header = () => {
               <NavLink className="nav-link" to="/">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Equipe">L'équipe bénévole</NavLink>
+              <NavLink className="nav-link" to="/TeamAnim">La Team Anim</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Centre">Accueil de Loisirs</NavLink>
@@ -71,6 +71,9 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Resto">Restaurant scolaire</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/Equipe">Les bénévoles</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Contact">Contact</NavLink>

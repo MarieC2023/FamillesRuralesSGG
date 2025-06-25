@@ -2,7 +2,7 @@
 
 nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll {
   background-color: var(--color-bg);
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   padding: var(--spacing-m) var(--spacing-l);
   border-bottom: 1px solid var(--color-secondary);
   width: 100%;
@@ -37,7 +37,6 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
   font-size: 1.2rem;
   color: var(--color-accent);
   border-color: var(--color-accent);
-
 }
 
 .navbar-toggler-icon {
@@ -48,8 +47,6 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
   width: 1.5rem;
   height: 1.5rem;
 }
-
-
 
 .navbar-collapse {
   padding: 1rem 0;
@@ -65,8 +62,13 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
 
 .nav-link {
   color: var(--color-text) !important;
-  font-size: 600;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: var(--color-accent) !important;
 }
 
 .nav-link:hover {
@@ -77,8 +79,9 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .nav-link {
-    font-size: 0.95rem;
-    padding: 0.25rem 0.5rem;
+    font-weight: 400;
+    font-size: 0.80rem !important;
+    padding: 0.25rem 0.25rem;
   }
 
   .navbar-nav {
@@ -120,10 +123,8 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
   }
 
   .navbar-container {
-    background-color: var(--color-background-opaque);
     padding: 1rem;
     border-radius: 0 0 var(--rayon-bouton, 12px) var(--rayon-bouton, 12px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
     z-index: 999;
   }
 
