@@ -200,3 +200,31 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.navbarScroll.navbarDark {
     font-size: 0.9rem;
   }
 }
+
+/* ===== SLIDE MENU ===== */
+.menu-mobile {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-background-opaque);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  z-index: 998;
+}
+
+.menu-mobile.menu-open {
+  max-height: 500px; /* suffisamment grand pour afficher les liens */
+}
+
+/* Liens dans le menu mobile */
+.menu-mobile .navbar-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.menu-mobile .nav-link {
+  font-size: 1.1rem;
+}
