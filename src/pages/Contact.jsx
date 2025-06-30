@@ -4,9 +4,20 @@ import FormulaireContact from "@partials/FormulaireContact";
 import 'leaflet/dist/leaflet.css';
 import MapContact from '@partials/MapContact';
 
+import { Helmet } from "react-helmet";
+
 const Contact = () => {
     return (
         <section className="contact-section">
+            <Helmet>
+                <title>Contact - Familles Rurales Saint-Georges-des-Gardes</title>
+                <meta
+                    name="description"
+                    content="Contactez l’équipe Familles Rurales de Saint-Georges-des-Gardes : 
+                    adresse, téléphone, email et formulaire en ligne à votre disposition."
+                />
+            </Helmet>
+
             <h1 className="text-center mb-5">Contactez-nous</h1>
 
             <div className="intro-contact">

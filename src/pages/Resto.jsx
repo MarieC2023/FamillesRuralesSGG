@@ -4,12 +4,23 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './resto.css';
 
+import { Helmet } from "react-helmet";
+
 import extCantine from '@/assets/cantine.webp';
 import intCantine from '@/assets/cantine2.webp';
 
 const Resto = () => {
     return (
         <div className="wrapper resto-page">
+            <Helmet>
+                <title>Restauration scolaire - Familles Rurales Saint-Georges-des-Gardes</title>
+                <meta
+                    name="description"
+                    content="Tout savoir sur le service de restauration scolaire : 
+                    menus, inscription, fonctionnement, équilibre alimentaire et sensibilisation."
+                />
+            </Helmet>
+
             <h1 className="text-center mb-5">
                 Restaurant scolaire
             </h1>

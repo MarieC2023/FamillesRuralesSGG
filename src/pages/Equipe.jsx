@@ -4,6 +4,8 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './equipe.css';
 
+import { Helmet } from "react-helmet";
+
 import benevoles from '@/assets/benevoles.webp';
 import benevoles2 from '@/assets/benevoles2.webp';
 
@@ -11,14 +13,24 @@ import benevoles2 from '@/assets/benevoles2.webp';
 const Equipe = () => {
     return (
         <div className="wrapper equipe-page">
+            <Helmet>
+                <title>Bénévoles - Familles Rurales Saint-Georges-des-Gardes</title>
+                <meta
+                    name="description"
+                    content="Les bénévoles sont au cœur de Familles Rurales. 
+                    Découvrez leur rôle, leur engagement et comment rejoindre l’association 
+                    à Saint-Georges-des-Gardes."
+                />
+            </Helmet>
+
             <h1 className="text-center mb-5">
                 Rejoignez l’équipe des bénévoles !
             </h1>
 
             <section className="equipe-section d-flex flex-column flex-md-row align-items-start gap-5">
                 <div className="equipe-image">
-                    
-                     <img
+
+                    <img
                         src={benevoles2}
                         alt="Illustration bénévoles"
                         className="img-fluid rounded"

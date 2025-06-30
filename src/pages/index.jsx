@@ -4,6 +4,8 @@ import '@partials/buttons.css';
 import '@partials/card.css';
 import '@partials/links.css';
 
+import { Helmet } from "react-helmet";
+
 import entreePeri from '@/assets/entreePeri.webp';
 
 
@@ -12,6 +14,15 @@ import './index.css';
 const Index = () => {
     return (
         <div className="wrapper homepage">
+            <Helmet>
+                <title>Accueil - Familles Rurales Saint-Georges-des-Gardes</title>
+                <meta
+                    name="description"
+                    content="Bienvenue sur le site de Familles Rurales de Saint-Georges-des-Gardes. 
+                    Découvrez nos services périscolaires, nos activités et notre engagement local."
+                />
+            </Helmet>
+
             <h1 className="text-center mb-5">
                 Un lieu d’accueil convivial pour les enfants de Saint-Georges-des-Gardes
             </h1>

@@ -4,6 +4,8 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './peri.css';
 
+import { Helmet } from "react-helmet";
+
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
 
@@ -11,6 +13,15 @@ import extPeri from '@/assets/peri2.webp';
 const Peri = () => {
     return (
         <div className="wrapper periscolaire-page">
+            <Helmet>
+                <title>Périscolaire - Familles Rurales Saint-Georges-des-Gardes</title>
+                <meta
+                    name="description"
+                    content="Infos sur l'accueil périscolaire à Saint-Georges-des-Gardes : 
+                    horaires, encadrement, activités proposées aux enfants avant et après l'école."
+                />
+            </Helmet>
+
             <h1 className="text-center mb-5">
                 Périscolaire – Péricentre
             </h1>

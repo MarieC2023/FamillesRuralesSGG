@@ -4,6 +4,8 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './centre.css';
 
+import { Helmet } from "react-helmet";
+
 import entreePeri from '@/assets/entreePeri.webp';
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
@@ -20,6 +22,17 @@ import vac4 from '@/assets/planning/vac4.webp';
 const Centre = () => {
     return (
         <div className="wrapper centre-page">
+
+            <Helmet>
+                <title>Centre de loisirs - Familles Rurales Saint-Georges-des-Gardes</title>
+                <meta
+                    name="description"
+                    content="Découvrez les activités du centre de loisirs de 
+                    Saint-Georges-des-Gardes pour les enfants pendant les vacances 
+                    scolaires et les mercredis."
+                />
+            </Helmet>
+
             <h1 className="text-center mb-5">
                 Accueil de Loisirs — Mercredi et Vacances scolaires
             </h1>
@@ -109,19 +122,19 @@ const Centre = () => {
             </section>
 
             {/* Visuels planning activités */}
-           <section className="plannings mt-5">
-  <h2>Nos plannings d’activités</h2>
-  <div className="plannings-container d-flex justify-content-center  flex-wrap">
-    <PlanningCarrousel
-      titre="Planning des mercredis"
-      images={[merc1, merc2]}
-    />
-    <PlanningCarrousel
-      titre="Planning des vacances scolaires"
-      images={[vac1, vac2, vac3, vac4]}
-    />
-  </div>
-</section>
+            <section className="plannings mt-5">
+                <h2>Nos plannings d’activités</h2>
+                <div className="plannings-container d-flex justify-content-center  flex-wrap">
+                    <PlanningCarrousel
+                        titre="Planning des mercredis"
+                        images={[merc1, merc2]}
+                    />
+                    <PlanningCarrousel
+                        titre="Planning des vacances scolaires"
+                        images={[vac1, vac2, vac3, vac4]}
+                    />
+                </div>
+            </section>
 
 
             {/* Documents d’inscription */}
