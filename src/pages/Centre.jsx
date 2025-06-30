@@ -8,6 +8,15 @@ import entreePeri from '@/assets/entreePeri.webp';
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
 
+import PlanningCarrousel from '@partials/PlanningCarrousel';
+
+import merc1 from '@/assets/planning/merc1.webp';
+import merc2 from '@/assets/planning/merc2.webp';
+import vac1 from '@/assets/planning/vac1.webp';
+import vac2 from '@/assets/planning/vac2.webp';
+import vac3 from '@/assets/planning/vac3.webp';
+import vac4 from '@/assets/planning/vac4.webp';
+
 const Centre = () => {
     return (
         <div className="wrapper centre-page">
@@ -100,13 +109,20 @@ const Centre = () => {
             </section>
 
             {/* Visuels planning activités */}
-            <section className="plannings mt-5">
-                <h2>Nos plannings d’activités</h2>
-                <div className="d-flex flex-column flex-md-row gap-4">
-                    <div className="img-placeholder">Planning en cours</div>
-                    <div className="img-placeholder">Planning prochaines vacances</div>
-                </div>
-            </section>
+           <section className="plannings mt-5">
+  <h2>Nos plannings d’activités</h2>
+  <div className="plannings-container d-flex justify-content-center  flex-wrap">
+    <PlanningCarrousel
+      titre="Planning des mercredis"
+      images={[merc1, merc2]}
+    />
+    <PlanningCarrousel
+      titre="Planning des vacances scolaires"
+      images={[vac1, vac2, vac3, vac4]}
+    />
+  </div>
+</section>
+
 
             {/* Documents d’inscription */}
             <section className="documents-section mt-5">
@@ -118,7 +134,7 @@ const Centre = () => {
                         <ul>
                             <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
                             <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
-                            <li><a href="/docs/ReglementInterieurPeriCentre.pdf" className="lien-telechargement" download>Règlement intérieur</a></li>
+                            <li><a href="/docs/ReglementInterieurCentre.pdf" className="lien-telechargement" download>Règlement intérieur de l'accueil de loisirs</a></li>
 
                         </ul>
                     </div>

@@ -79,7 +79,7 @@ const Peri = () => {
                         <ul>
                             <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
                             <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
-                            <li><a href="/docs/ReglementInterieurPeriCentre.pdf" className="lien-telechargement" download>Règlement intérieur</a></li>
+                            <li><a href="/docs/ReglementInterieurPeri.pdf" className="lien-telechargement" download>Règlement intérieur de la périscolaire</a></li>
 
                         </ul>
                     </div>
