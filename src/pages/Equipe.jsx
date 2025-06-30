@@ -4,6 +4,10 @@ import '@partials/buttons.css';
 import '@partials/links.css';
 import './equipe.css';
 
+import benevoles from '@/assets/benevoles.webp';
+import benevoles2 from '@/assets/benevoles2.webp';
+
+
 const Equipe = () => {
     return (
         <div className="wrapper equipe-page">
@@ -12,11 +16,20 @@ const Equipe = () => {
             </h1>
 
             <section className="equipe-section d-flex flex-column flex-md-row align-items-start gap-5">
-                {/* Colonne image (à ajouter plus tard) */}
-                <div className="equipe-image placeholder">
-                    {/* Remplace "placeholder" par une image réelle quand tu l’auras */}
-                    <div className="img-placeholder">Photo à venir</div>
+                <div className="equipe-image">
+                    
+                     <img
+                        src={benevoles2}
+                        alt="Illustration bénévoles"
+                        className="img-fluid rounded"
+                    />
+                    <img
+                        src={benevoles}
+                        alt="Illutration bénévoles"
+                        className="img-fluid rounded"
+                    />
                 </div>
+
 
                 {/* Colonne texte */}
                 <div className="equipe-texte">
