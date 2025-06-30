@@ -10,7 +10,6 @@ const Contact = () => {
             <h1 className="text-center mb-5">Contactez-nous</h1>
 
             <div className="intro-contact">
-                {/* Remplacement de la photo par la carte */}
                 <div className="intro-photo">
                     <MapContact />
                 </div>

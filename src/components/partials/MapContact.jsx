@@ -1,9 +1,26 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+
+import 'leaflet/dist/leaflet.css';
 import './mapContact.css';
 
+// Correction : import manuel des icônes
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+// Fix affichage icônes Leaflet
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
+
+// Coordonnées des deux lieux
 const positionPeriscolaire = [47.14946849558762, -0.759314189291527];
-const positionResto = [47.150568128429605, -0.7591239646075566]; // Remplace par les coordonnées exactes du resto
+const positionResto = [47.150568128429605, -0.7591239646075566];
 
 const MapContact = () => {
   return (
@@ -33,6 +50,5 @@ const MapContact = () => {
     </MapContainer>
   );
 };
-
 
 export default MapContact;
