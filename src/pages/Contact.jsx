@@ -1,6 +1,8 @@
 import React from "react";
 import "./contact.css";
 import FormulaireContact from "@partials/FormulaireContact";
+import 'leaflet/dist/leaflet.css';
+import MapContact from '@partials/MapContact';
 
 const Contact = () => {
     return (
@@ -8,7 +10,10 @@ const Contact = () => {
             <h1 className="text-center mb-5">Contactez-nous</h1>
 
             <div className="intro-contact">
-                <div className="intro-photo placeholder">Photo à venir</div>
+                {/* Remplacement de la photo par la carte */}
+                <div className="intro-photo">
+                    <MapContact />
+                </div>
 
                 <div className="intro-texte">
                     <p>Merci de sélectionner le formulaire qui correspond à votre demande :</p>

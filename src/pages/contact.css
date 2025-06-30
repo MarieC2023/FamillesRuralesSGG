@@ -32,16 +32,18 @@
 .intro-photo {
   flex: 1;
   max-width: 35%;
-  background-color: #ddd;
-  color: #555;
-  font-style: italic;
+  /* suppression du fond gris */
+  background-color: transparent;
+  color: inherit;
+  font-style: normal;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  min-height: 400px; /* un peu plus haut pour la carte */
   border-radius: 1rem;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0;
+  overflow: hidden;
 }
 
 .intro-texte {
