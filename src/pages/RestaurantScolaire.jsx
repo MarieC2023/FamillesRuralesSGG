@@ -6,6 +6,8 @@ import './resto.css';
 
 import { Helmet } from "react-helmet";
 
+import BlocImageTexte from '@partials/BlocImageTexte';
+
 import extCantine from '@/assets/cantine.webp';
 import intCantine from '@/assets/cantine2.webp';
 
@@ -25,18 +27,12 @@ const RestaurantScolaire = () => {
                 Restaurant scolaire
             </h1>
 
-            <section className="resto-section d-flex flex-column flex-md-row align-items-start gap-5">
-                {/* Colonne image */}
-                <div className="resto-images">
-                    <img
-                        src={extCantine}
-                        alt="Vue extérieure du restaurant scolaire"
-                        className="img-fluid rounded"
-                    />
-                </div>
-
-                {/* Colonne texte */}
-                <div className="resto-texte">
+            {/* Bloc image + texte */}
+            <section>
+                <BlocImageTexte
+                    imageSrc={extCantine}
+                    imageAlt="Photos du restaurant scolaire"
+                >
                     <p>
                         Les petits et grands écoliers sont accueillis avec chaleur par Audrey, Maryline, Sarah, Jessica, Laurence,
                         et toute une équipe de bénévoles dynamiques.
@@ -50,8 +46,11 @@ const RestaurantScolaire = () => {
                         Vous avez envie de donner un coup de main pour le service, rencontrer les enfants et participer à la vie de l’école ?<br />
                         Nous serons ravis de vous accueillir parmi nous !
                     </p>
+                </BlocImageTexte>
 
-                    <NavLink to="/Contact" className="bouton mt-4">Nous contacter</NavLink>
+                {/* ✅ Bouton hors du composant */}
+                <div className="text-center mt-4">
+                    <NavLink to="/Contact" className="bouton">Nous contacter</NavLink>
                 </div>
             </section>
 
@@ -75,7 +74,7 @@ const RestaurantScolaire = () => {
                     />
                 </div>
             </section>
-        </div >
+        </div>
     );
 };
 

@@ -6,6 +6,8 @@ import './centre.css';
 
 import { Helmet } from "react-helmet";
 
+import BlocImageTexte from '@partials/BlocImageTexte';
+
 import entreePeri from '@/assets/entreePeri.webp';
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
@@ -41,36 +43,17 @@ const Centre = () => {
                 <h2>En images</h2>
                 <div className="img-placeholder">[Carrousel des photos à venir]</div>
             </section> */}
-
-            <section className="centre-section d-flex flex-column flex-md-row align-items-start gap-5">
-                {/* Colonne image (à venir : photo de l’équipe) */}
-                <div className="periscolaire-images d-flex flex-column gap-4">
-                    <img
-                        src={entreePeri}
-                        alt="Entrée de la périscolaire"
-                        className="img-fluid rounded"
-                    />
-                    <img
-                        src={intPeri}
-                        alt="Salle de la périscolaire"
-                        className="img-fluid rounded"
-                    />
-                    <img
-                        src={extPeri}
-                        alt="Cour de la périscolaire"
-                        className="img-fluid rounded"
-                    />
-                </div>
-
-
-                {/* Colonne texte */}
-                <div className="centre-texte">
+            <section>
+                <BlocImageTexte
+                    imageSrc={[entreePeri, intPeri, extPeri]}
+                    imageAlt="Locaux périscolaire"
+                >
                     <p>
                         Le centre de loisirs accueille les enfants de 3 à 12 ans, tous les mercredis et pendant les vacances scolaires.
                     </p>
                     <p>
                         Encadrés par une équipe d’animateurs diplômés, les enfants découvrent chaque semaine des activités variées :
-                        jeux collectifs, ateliers créatifs, sorties, temps calmes...<br />
+                        jeux collectifs, ateliers créatifs, sorties, temps calmes...
                     </p>
                     <p>
                         <strong>L’objectif :</strong> favoriser leur épanouissement, leur créativité et leur autonomie dans un cadre bienveillant.
@@ -91,14 +74,6 @@ const Centre = () => {
                                 ➔ Plus d’informations sur le péricentre
                             </NavLink>
                         </li>
-                        {/* <li>
-                            <strong>Péri-centre :</strong>
-                            <NavLink to="/Peri" className="bouton bouton-secondaire ms-2">
-                                ➔ En savoir plus
-                            </NavLink>
-                        </li> */}
-
-
                     </ul>
                     <p>
                         ⏳ <strong>Souplesse assurée :</strong> nous nous adaptons aux besoins des familles pour les horaires et la présence en demi-journée.
@@ -116,11 +91,12 @@ const Centre = () => {
                         Un pique-nique est proposé une fois par semaine, pendant les vacances scolaires uniquement, selon le programme d'activités.
                     </p>
 
-                    <NavLink to="/Contact" className="bouton mt-4">Nous contacter</NavLink>
+                </BlocImageTexte>
+                <div className="text-center mt-4">
+                    <NavLink to="/Contact" className="bouton">Nous contacter</NavLink>
                 </div>
-
+                
             </section>
-
             {/* Visuels planning activités */}
             <section className="plannings mt-5">
                 <h2>Nos plannings d’activités</h2>

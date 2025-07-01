@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '@partials/buttons.css';
-import '@partials/card.css';
-import '@partials/links.css';
-
 import { Helmet } from "react-helmet";
+
+import BlocImageTexte from '@partials/BlocImageTexte';
 
 import entreePeri from '@/assets/entreePeri.webp';
 
-
+import '@partials/buttons.css';
+import '@partials/card.css';
+import '@partials/links.css';
 import './index.css';
 
 const Index = () => {
@@ -23,39 +23,32 @@ const Index = () => {
                 />
             </Helmet>
 
+            {/* Titre seul, au-dessus */}
             <h1 className="text-center mb-5">
                 Un lieu d’accueil convivial pour les enfants de Saint-Georges-des-Gardes
             </h1>
-            {/* Titre & introduction */}
-            <section className="hero d-flex flex-column flex-md-row align-items-center gap-8">
-                {/* Colonne image */}
-                <div className="hero-image">
-                    <img
-                        src={entreePeri}
-                        alt="Entrée de la périscolaire"
-                        className="img-fluid rounded"
-                    />
-                </div>
 
-                <div className="col-md-6">
-                    <p>
-                        Ici, nous accompagnons les familles au quotidien en proposant des services adaptés aux enfants de 3 à 12 ans :
-                        accueil périscolaire, centre de loisirs, restaurant scolaire, et bien plus encore.
-                    </p>
-                    <p>
-                        <strong>Notre mission ?</strong> Offrir aux enfants un cadre sécurisé, convivial et épanouissant, tout en
-                        soutenant les parents dans l’organisation de leur quotidien.
-                    </p>
-                    <p>
-                        <strong>Nos équipes</strong>, composées de professionnels et de bénévoles engagés, œuvrent chaque jour pour
-                        proposer des activités enrichissantes, des repas équilibrés et un accueil chaleureux.
-                    </p>
-                    <p>
-                        ➡️ Envie d’en savoir plus ? Découvrez nos différentes pages et rejoignez l’aventure Familles Rurales !
-                    </p>
-                </div>
-            </section>
 
+            <BlocImageTexte
+                imageSrc={entreePeri}
+                imageAlt="Entrée de la périscolaire"
+            >
+                <p>
+                    Ici, nous accompagnons les familles au quotidien en proposant des services adaptés aux enfants de 3 à 12 ans :
+                    accueil périscolaire, centre de loisirs, restaurant scolaire, et bien plus encore.
+                </p>
+                <p>
+                    <strong>Notre mission ?</strong> Offrir aux enfants un cadre sécurisé, convivial et épanouissant, tout en
+                    soutenant les parents dans l’organisation de leur quotidien.
+                </p>
+                <p>
+                    <strong>Nos équipes</strong>, composées de professionnels et de bénévoles engagés, œuvrent chaque jour pour
+                    proposer des activités enrichissantes, des repas équilibrés et un accueil chaleureux.
+                </p>
+                <p>
+                    ➡️ Envie d’en savoir plus ? Découvrez nos différentes pages et rejoignez l’aventure Familles Rurales !
+                </p>
+            </BlocImageTexte>
 
             {/* Programmes */}
             <section className="programmes">
@@ -88,7 +81,6 @@ const Index = () => {
                     </div>
                 </div>
             </section>
-
 
             {/* Bouton contact */}
             <div className="text-center mt-5">

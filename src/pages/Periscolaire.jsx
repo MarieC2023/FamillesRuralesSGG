@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
 
+import BlocImageTexte from '@partials/BlocImageTexte';
 
 const Peri = () => {
     return (
@@ -26,23 +27,11 @@ const Peri = () => {
                 Périscolaire – Péricentre
             </h1>
 
-            <section className="periscolaire-section d-flex flex-column flex-md-row align-items-start gap-5">
-                {/* Colonne image */}
-                <div className="periscolaire-images d-flex flex-column gap-4">
-                    <img
-                        src={intPeri}
-                        alt="Salle de la périscolaire"
-                        className="img-fluid rounded"
-                    />
-                    <img
-                        src={extPeri}
-                        alt="Cour de la périscolaire"
-                        className="img-fluid rounded"
-                    />
-                </div>
-
-                {/* Colonne texte */}
-                <div className="periscolaire-texte">
+            <section>
+                <BlocImageTexte
+                    imageSrc={[intPeri, extPeri]}
+                    imageAlt="Photos des locaux périscolaires"
+                >
                     <p>
                         L’accueil périscolaire de Saint Georges des Gardes est déclaré auprès
                         de la Direction Départementale de la Cohésion Sociale (DDCS) et
@@ -77,7 +66,9 @@ const Peri = () => {
                         L’équipe pédagogique est qualifiée pour garantir un accueil de qualité, adapté aux besoins des enfants.
                     </p>
 
-                    <NavLink to="/Contact" className="bouton mt-4">Nous contacter</NavLink>
+                </BlocImageTexte>
+                <div className="text-center mt-4">
+                    <NavLink to="/Contact" className="bouton">Nous contacter</NavLink>
                 </div>
             </section>
 
@@ -91,7 +82,6 @@ const Peri = () => {
                             <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
                             <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
                             <li><a href="/docs/ReglementInterieurPeri.pdf" className="lien-telechargement" download>Règlement intérieur de la périscolaire</a></li>
-
                         </ul>
                     </div>
                 </div>
