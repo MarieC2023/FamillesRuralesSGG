@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 import extCantine from '@/assets/cantine.webp';
 import intCantine from '@/assets/cantine2.webp';
 
-const Resto = () => {
+const RestaurantScolaire = () => {
     return (
         <div className="wrapper resto-page">
             <Helmet>
@@ -79,4 +79,4 @@ const Resto = () => {
     );
 };
 
-export default Resto;
+export default RestaurantScolaire;

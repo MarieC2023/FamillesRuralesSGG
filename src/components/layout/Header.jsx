@@ -63,17 +63,17 @@ const Header = () => {
               <NavLink className="nav-link" to="/TeamAnim">La Team Anim</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Centre">Accueil de Loisirs</NavLink>
+              <NavLink className="nav-link" to="/AccueilDeLoisirs">Accueil de Loisirs</NavLink>
             </li>
             
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Peri">Périscolaire</NavLink>
+              <NavLink className="nav-link" to="/Periscolaire">Périscolaire</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Resto">Restaurant scolaire</NavLink>
+              <NavLink className="nav-link" to="/RestaurantScolaire">Restaurant scolaire</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Equipe">Les bénévoles</NavLink>
+              <NavLink className="nav-link" to="/Benevoles">Les bénévoles</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Contact">Contact</NavLink>
