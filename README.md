@@ -1,6 +1,4 @@
-# 🏫 Site périscolaire – Saint-Georges-des-Gardes
-
-##   Présentation du site
+# 🏫 Site Familles Rurales – Saint-Georges-des-Gardes
 
 <p align="center">
   <!-- Technologies principales -->
@@ -27,7 +25,7 @@
 
 ## 📝 Présentation du projet
 
-Ce site web, développé avec **React** et **Vite**, présente et facilite la gestion des **activités périscolaires**, du **centre de loisirs** et du **service de restauration scolaire** de l’école de **Saint-Georges-des-Gardes** (49).
+Ce site web, développé avec **React** et **Vite**, présente les **activités périscolaires**, le **centre de loisirs** et le **service de restauration scolaire** de l’école de **Saint-Georges-des-Gardes** (49).
 
 Il est destiné aux **familles** et à l’**équipe de l’association Familles Rurales**, à travers une interface moderne, accessible et responsive.
 
@@ -53,7 +51,7 @@ Il est destiné aux **familles** et à l’**équipe de l’association Familles
 - **JavaScript moderne (ES6+)**
 - **CSS** (modulaire, structuré par composant)
 - **JSON** (fichier pour les données dynamiques)
-- **SVG / WebP** (optimisation des images et icônes)
+- **WebP** (optimisation des images et icônes)
 
 ---
 
@@ -68,7 +66,7 @@ Il est destiné aux **familles** et à l’**équipe de l’association Familles
 │   ├── assets/           → Images du site global
 │   ├── components/
 │   │   ├── layout/       → Header, Footer, ScrollToTop
-│   │   └── partials/     → Composants : Cards, Formulaire, Carte, Planning, etc.
+│   │   └── partials/     → Composants : Cards, Formulaires, Bloc Image + Texte, Planning, etc.
 │   ├── data/
 │   │   └── team.json     → Données dynamiques de l’équipe
 │   ├── pages/            → Toutes les pages principales du site (.jsx + .css)
@@ -82,8 +80,8 @@ Il est destiné aux **familles** et à l’**équipe de l’association Familles
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/mariecollet/nom-du-repo.git
-cd nom-du-repo
+git clone https://github.com/MarieC2023/FamillesRuralesSGG.git
+cd FamillesRuralesSGG
 
 # Installer les dépendances
 npm install
@@ -107,12 +105,12 @@ Le site est déployé sur [**Vercel**](https://vercel.com/), plateforme idéale 
 
 ## 🛠️ Fonctionnalités clés
 
-- 🧭 Navigation multipage fluide via React Router
-- 🧱 Composants réutilisables pour une architecture claire
-- 📄 Données dynamiques (documents, équipe…) via fichiers JSON
-- 🌓 Interface responsive *desktop-first*
-- ♿ Accessibilité renforcée (ARIA, contraste, clavier…)
-- 📤 Déploiement optimisé sur Vercel
+- Navigation multipage fluide via React Router
+- Composants réutilisables pour une architecture claire
+- Données dynamiques (documents, équipe…) via fichiers JSON
+- Interface responsive *desktop-first*
+- Accessibilité renforcée (ARIA, contraste, clavier…)
+- Déploiement optimisé sur Vercel
 
 ---
 
