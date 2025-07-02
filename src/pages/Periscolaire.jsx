@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '@partials/buttons.css';
-import '@partials/links.css';
+
 import './peri.css';
 
 import { Helmet } from "react-helmet";
@@ -10,6 +9,9 @@ import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
 
 import BlocImageTexte from '@partials/BlocImageTexte';
+import Buttons from '@partials/Buttons';
+import CardDocument from "@partials/CardDocument";
+
 
 const Peri = () => {
     return (
@@ -67,25 +69,37 @@ const Peri = () => {
                     </p>
 
                 </BlocImageTexte>
-                <div className="text-center mt-4">
-                    <NavLink to="/Contact" className="bouton">Nous contacter</NavLink>
+                <div className="text-center">
+                    <Buttons to="/Contact">Nous contacter</Buttons>
                 </div>
             </section>
 
             <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
+
                 <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
-                    <div className="carte-activite">
-                        <h3>🧒 Périscolaire</h3>
-                        <p>Téléchargez les documents nécessaires à l’inscription :</p>
-                        <ul>
-                            <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
-                            <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
-                            <li><a href="/docs/ReglementInterieurPeri.pdf" className="lien-telechargement" download>Règlement intérieur de la périscolaire</a></li>
-                        </ul>
-                    </div>
+                    <CardDocument
+                        emoji="🧒"
+                        titre="Périscolaire"
+                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        fichiers={[
+                            {
+                                href: "/docs/DossierInscription.pdf",
+                                label: "Dossier d’inscription",
+                            },
+                            {
+                                href: "/docs/FicheSanitaire.pdf",
+                                label: "Fiche sanitaire",
+                            },
+                            {
+                                href: "/docs/ReglementInterieurPeri.pdf",
+                                label: "Règlement intérieur de la périscolaire",
+                            },
+                        ]}
+                    />
                 </div>
             </section>
+
         </div>
     );
 };

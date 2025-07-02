@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 import BlocImageTexte from '@partials/BlocImageTexte';
+import Buttons from '@partials/Buttons';
+import CardDocument from "@partials/CardDocument";
 
 import entreePeri from '@/assets/entreePeri.webp';
 
-import '@partials/buttons.css';
-import '@partials/card.css';
-import '@partials/links.css';
+
 import './index.css';
 
 const Index = () => {
@@ -53,38 +53,38 @@ const Index = () => {
             {/* Programmes */}
             <section className="programmes">
                 <h2>Nos programmes d’activités</h2>
-                <NavLink className="bouton" to="/Centre">→ Voir la page Accueil de Loisirs</NavLink>
+                <Buttons to="/AccueilDeLoisirs">→ Voir la page Accueil de Loisirs</Buttons>
             </section>
 
             {/* Cartes documents */}
             <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
-                <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
-                    {/* Carte Accueil de loisirs */}
-                    <div className="carte-activite">
-                        <h3>🧒 Accueil de Loisirs / Périscolaire</h3>
-                        <p>Téléchargez les documents nécessaires à l’inscription :</p>
-                        <ul>
-                            <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
-                            <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
-                        </ul>
-                    </div>
 
-                    {/* Carte Restaurant scolaire */}
-                    <div className="carte-activite">
-                        <h3>🍽️ Restaurant scolaire</h3>
-                        <p>Téléchargez les documents nécessaires à l’inscription :</p>
-                        <ul>
-                            <li><a href="/docs/BulletinInscriptionCantine.pdf" className="lien-telechargement" download>Bulletin d’inscription cantine</a></li>
-                            <li><a href="/docs/ReglementInterieur.pdf" className="lien-telechargement" download>Règlement intérieur</a></li>
-                        </ul>
-                    </div>
+                <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
+                    <CardDocument
+                        emoji="🧒"
+                        titre="Accueil de Loisirs / Périscolaire"
+                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        fichiers={[
+                            { href: "/docs/DossierInscription.pdf", label: "Dossier d’inscription" },
+                            { href: "/docs/FicheSanitaire.pdf", label: "Fiche sanitaire" }
+                        ]}
+                    />
+
+                    <CardDocument
+                        emoji="🍽️"
+                        titre="Restaurant scolaire"
+                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        fichiers={[
+                            { href: "/docs/BulletinInscriptionCantine.pdf", label: "Bulletin d’inscription cantine" },
+                            { href: "/docs/ReglementInterieur.pdf", label: "Règlement intérieur" }
+                        ]}
+                    />
                 </div>
             </section>
 
-            {/* Bouton contact */}
-            <div className="text-center mt-5">
-                <NavLink to="/Contact" className="bouton">Nous contacter</NavLink>
+            <div className="text-center">
+                <Buttons to="/Contact">Nous contacter</Buttons>
             </div>
         </div>
     );

@@ -1,18 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '@partials/buttons.css';
-import '@partials/links.css';
+
 import './centre.css';
 
 import { Helmet } from "react-helmet";
 
+import Buttons from '@partials/Buttons';
 import BlocImageTexte from '@partials/BlocImageTexte';
+import PlanningCarrousel from '@partials/PlanningCarrousel';
+import CardDocument from "@partials/CardDocument"; 
 
 import entreePeri from '@/assets/entreePeri.webp';
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
-
-import PlanningCarrousel from '@partials/PlanningCarrousel';
 
 import merc1 from '@/assets/planning/merc1.webp';
 import merc2 from '@/assets/planning/merc2.webp';
@@ -92,10 +92,11 @@ const Centre = () => {
                     </p>
 
                 </BlocImageTexte>
-                <div className="text-center mt-4">
-                    <NavLink to="/Contact" className="bouton">Nous contacter</NavLink>
+
+                <div className="text-center">
+                    <Buttons to="/Contact">Nous contacter</Buttons>
                 </div>
-                
+
             </section>
             {/* Visuels planning activités */}
             <section className="plannings mt-5">
@@ -116,19 +117,30 @@ const Centre = () => {
             {/* Documents d’inscription */}
             <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
-                <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
-                    <div className="carte-activite">
-                        <h3>🧒 Accueil de Loisirs </h3>
-                        <p>Téléchargez les documents nécessaires à l’inscription :</p>
-                        <ul>
-                            <li><a href="/docs/DossierInscription.pdf" className="lien-telechargement" download>Dossier d’inscription</a></li>
-                            <li><a href="/docs/FicheSanitaire.pdf" className="lien-telechargement" download>Fiche sanitaire</a></li>
-                            <li><a href="/docs/ReglementInterieurCentre.pdf" className="lien-telechargement" download>Règlement intérieur de l'accueil de loisirs</a></li>
 
-                        </ul>
-                    </div>
+                <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4">
+                    <CardDocument
+                        emoji="🧒"
+                        titre="Accueil de Loisirs"
+                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        fichiers={[
+                            {
+                                href: "/docs/DossierInscription.pdf",
+                                label: "Dossier d’inscription",
+                            },
+                            {
+                                href: "/docs/FicheSanitaire.pdf",
+                                label: "Fiche sanitaire",
+                            },
+                            {
+                                href: "/docs/ReglementInterieurCentre.pdf",
+                                label: "Règlement intérieur de l'accueil de loisirs",
+                            },
+                        ]}
+                    />
                 </div>
             </section>
+
         </div>
     );
 };
