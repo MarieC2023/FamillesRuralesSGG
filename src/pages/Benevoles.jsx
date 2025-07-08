@@ -29,6 +29,7 @@ const Equipe = () => {
             <BlocImageTexte
                 imageSrc={[benevoles, benevoles2]}
                 imageAlt="Illustration bénévoles"
+                className="bloc-texte-benevoles"
             >
                 <p>
                     Vous souhaitez partager vos talents, donner un peu de votre temps et vous engager pour la vie locale ?<br />

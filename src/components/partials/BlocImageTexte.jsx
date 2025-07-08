@@ -1,14 +1,15 @@
 import React from 'react';
 import './blocImageTexte.css';
 
-const BlocImageTexte = ({ imageSrc, imageAlt, children, imageLeft = true }) => {
+const BlocImageTexte = ({ imageSrc, imageAlt, children, imageLeft = true, className = "" }) => {
     const isMultipleImages = Array.isArray(imageSrc);
 
     return (
         <section
             className={`bloc-texte-image d-flex ${
                 imageLeft ? 'flex-row' : 'flex-row-reverse'
-            }`}
+            }
+            ${className}`}
         >
             <div className={`image-col ${isMultipleImages ? 'multi-image' : ''}`}>
                 {isMultipleImages ? (

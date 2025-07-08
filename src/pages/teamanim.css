@@ -1,46 +1,55 @@
+/* === WRAPPER === */
 .teamanim-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Nouveau style harmonisé */
-.teamanim-wrapper h1 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-
-.teamanim-wrapper .intro {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  font-size: 1.1rem;
-  color: var(--color-text);
-  line-height: 1.6;
-}
-
+/* === GRILLE === */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-  padding: 1rem 0;
+  align-items: stretch;
+  justify-items: center;
 }
 
+/* === CARTE === */
 .team-card {
   background: white;
-  border-radius: 1.5rem;
-  padding: 1.5rem 1rem;
+  border-radius: 1.25rem;
+  padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+/* === IMAGE === */
+.team-image {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-image img {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 1rem;
 }
 
 .team-image img.photo {
@@ -48,22 +57,121 @@
 }
 
 .team-image img.illustration {
-  width: 100px;
-  height: auto;
   border-radius: 0;
 }
 
-.team-card h2 {
-  margin: 0.5rem 0 0.2rem;
-  font-size: 1.2rem;
-}
-
-.team-card .fonction {
-  font-style: italic;
-}
-
-.team-card .presentation {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+/* === NOM === */
+.nom {
+  font-weight: bold;
+  font-size: 1rem;
   color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+/* === FONCTION === */
+.fonction {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+/* === PRÉSENTATION === */
+.presentation {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  text-align: center;
+  margin-top: 0.5rem;
+  line-height: 1.3;
+}
+
+/* === RESPONSIVE === */
+
+/* === Desktop large (≥ 1024px) */
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* === Tablette large (768px – 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* === Tablette portrait / mobile large (426px – 767px) */
+@media (max-width: 767px) and (min-width: 426px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card {
+    max-width: 100%;
+    min-height: 260px;
+  }
+
+  .team-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .fonction {
+    font-size: 0.85rem;
+  }
+
+  .presentation {
+    font-size: 0.8rem;
+  }
+}
+
+/* === Mobile (≤ 425px) */
+@media (max-width: 425px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    max-width: 100%;
+    min-height: 240px;
+  }
+
+  .team-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .fonction {
+    font-size: 0.8rem;
+  }
+
+  .presentation {
+    font-size: 0.75rem;
+  }
+}
+
+/* === Petit mobile (≤ 320px) */
+@media (max-width: 320px) {
+  .team-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .fonction {
+    font-size: 0.75rem;
+  }
+
+  .presentation {
+    font-size: 0.7rem;
+  }
+
+  .team-card {
+    min-height: 220px;
+  }
 }

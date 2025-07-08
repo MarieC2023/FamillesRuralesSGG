@@ -5,60 +5,36 @@
   margin: 0 auto;
 }
 
-/* TITRES */
-.page-title {
-  font-family: var(--font-titre);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.section-title {
-  font-family: var(--font-titre);
-  font-size: 2rem;
-  color: var(--color-accent);
-  margin-bottom: 1.5rem;
-}
-
-/* INTRO IMAGE + TEXTE */
+/* BLOC TEXTE + CARTE */
 .intro-contact {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
   align-items: center;
   margin-bottom: 3rem;
 }
 
 .intro-photo {
-  flex: 1;
-  max-width: 35%;
-  /* suppression du fond gris */
-  background-color: transparent;
-  color: inherit;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px; /* un peu plus haut pour la carte */
-  border-radius: 1rem;
-  text-align: center;
-  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: var(--rayon-bouton);
   overflow: hidden;
 }
 
 .intro-texte {
-  flex: 2;
   font-family: var(--font-texte);
   font-size: 1.1rem;
   color: var(--color-muted);
+  flex: 1;
 }
 
 /* FORMULAIRES */
 .formulaires-container {
   display: flex;
-  gap: 2rem;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 /* COORDONNÉES */
@@ -88,7 +64,7 @@
   font-family: var(--font-titre);
   color: var(--color-text);
   margin-bottom: 0.5rem;
-  min-height: 3em; /* Assure une hauteur constante */
+  min-height: 3em;
 }
 
 .coordonnees-container .carte-activite p {
@@ -99,7 +75,6 @@
   margin-bottom: 1rem;
 }
 
-/* Ligne contact (Téléphone / Email) */
 .ligne-contact {
   display: flex;
   gap: 0.5rem;
@@ -130,7 +105,7 @@
   text-decoration: underline;
 }
 
-/* Carte Réseaux sociaux */
+/* Réseaux sociaux */
 .contact-reseaux {
   text-align: center;
   align-items: center;
@@ -162,23 +137,98 @@
   height: 56px;
 }
 
-/* RESPONSIVE TABLETTE */
-@media (max-width: 1024px) {
+/* === RESPONSIVE === */
+
+/* Très grands écrans */
+@media (min-width: 1440px) {
+  .intro-contact {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .intro-photo {
+    max-width: 40%;
+  }
+
+  .intro-texte {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop standard */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .intro-contact {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .intro-photo {
+    max-width: 35%;
+  }
+
+  .intro-texte {
+    flex: 1;
+  }
+
   .coordonnees-container .carte-activite {
     flex: 1 1 calc((100% - 2rem) / 2);
     max-width: calc((100% - 2rem) / 2);
   }
 }
 
-/* RESPONSIVE MOBILE */
-@media (max-width: 768px) {
+/* Tablettes et petits desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
   .intro-contact {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 3rem;
   }
 
-  .intro-photo,
+  .intro-photo {
+    max-width: 35%;
+  }
+
   .intro-texte {
+    flex: 1;
+    font-size: 1.05rem;
+  }
+
+  .map-container {
+    min-height: 280px;
+  }
+
+  .coordonnees-container .carte-activite {
+    flex: 1 1 100%;
     max-width: 100%;
+  }
+   .formulaires-container,
+  .coordonnees-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  .intro-contact {
+    flex-direction: column-reverse !important;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .intro-photo {
+    order: 1;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .intro-texte {
+    order: 2;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .map-container {
+    min-height: 250px;
   }
 
   .formulaires-container,
@@ -193,8 +243,20 @@
   }
 }
 
-/* RESPONSIVE MOBILE LARGE */
-@media (max-width: 425px) {
+/* Mobiles moyens */
+@media (max-width: 479px) {
+  .intro-contact {
+    gap: 1rem;
+  }
+
+  .intro-texte {
+    font-size: 0.9rem;
+  }
+
+  .map-container {
+    min-height: 200px;
+  }
+
   .page-title {
     font-size: 2rem;
   }
@@ -208,8 +270,12 @@
   }
 }
 
-/* RESPONSIVE MOBILE PETIT */
+/* Très petits mobiles */
 @media (max-width: 320px) {
+  .map-container {
+    min-height: 180px;
+  }
+
   .carte-activite {
     padding: 0.8rem;
   }

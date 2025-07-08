@@ -21,12 +21,19 @@
   min-width: 200px;
   max-width: 100%;
   margin: 10px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .bouton:hover {
   background-color: var(--color-accent);
   color: var(--color-background); 
   transform: scale(1.05);
+}
+
+.bouton:focus-visible {
+  outline: 2px dashed var(--color-accent);
+  outline-offset: 4px;
 }
 
 /* Conteneur de boutons centré */
@@ -62,6 +69,8 @@
 
   .btn-container {
     padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -20,7 +20,16 @@
   object-fit: cover;
   border-radius: 1rem;
 }
-
+.bloc-texte-benevoles .image-col.multi-image {
+  gap: 10rem;
+}
+.bloc-texte-benevoles .image-col.multi-image img {
+  width: 100%;
+  max-width: 400px;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: var(--rayon-bouton);
+}
 .equipe-texte {
   flex: 2;
 }
