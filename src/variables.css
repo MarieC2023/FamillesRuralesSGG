@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root {
   /* 🎨 Couleurs fonctionnelles */
   --color-primary: #D4A600;
@@ -8,14 +11,14 @@
   --color-secondary: #A0D2EB;
   --color-muted: #A3D9A5;
 
-  --color-success: #71c987; 
-  --color-error: #ff7f7f; 
+  --color-success: #71c987;
+  --color-error: #ff7f7f;
 
 
 
   /* ✍️ Polices */
-  --font-titre: 'Baloo 2', cursive;
-  --font-texte: 'Poppins', sans-serif;
+  --font-titre: 'Quicksand', sans-serif;
+  --font-texte: 'Lato', sans-serif;
 
   /* ⚙️ Utilitaires */
   --rayon-bouton: 12px;
