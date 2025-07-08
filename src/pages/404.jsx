@@ -13,7 +13,7 @@ const NotFound = () => {
         <title>Page introuvable - Familles Rurales Saint-Georges-des-Gardes</title>
         <meta
           name="description"
-          content="Oups ! La page que vous cherchez n’existe pas. 
+          content="Oups&nbsp;! La page que vous cherchez n’existe pas.&nbsp; 
           Revenez à l’accueil ou contactez-nous pour être aidé."
         />
       </Helmet>
@@ -25,8 +25,8 @@ const NotFound = () => {
         className="img-404"
       />
 
-      <p>Oups ! Cette page n'existe pas.</p>
-      <NavLink to="/" className="bouton">Retour à l'accueil</NavLink>
+      <p>Oups&nbsp;! Cette page n'existe pas.</p>
+      <NavLink to="/" className="bouton">Retour à l’accueil</NavLink>
     </div>
   )
 }

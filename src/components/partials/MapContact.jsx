@@ -32,9 +32,9 @@ const MapContact = () => {
       <Marker position={positionPeriscolaire}>
         <Popup>
           <div>
-            <strong>Accueil de Loisirs - Saint-Georges-des-Gardes</strong><br />
-            7 rue de l'église<br />
-            49120 Chemillé-en-Anjou
+            <strong>Accueil de Loisirs\u00A0-\u00A0Saint-Georges-des-Gardes</strong><br />
+            7\u00A0rue de l'église<br />
+            49120\u00A0Chemillé-en-Anjou
           </div>
         </Popup>
       </Marker>
@@ -42,8 +42,8 @@ const MapContact = () => {
         <Popup>
           <div>
             <strong>Restauration Scolaire</strong><br />
-            2 rue du bordage<br />
-            49120 Chemillé-en-Anjou
+            2\u00A0rue du bordage<br />
+            49120\u00A0Chemillé-en-Anjou
           </div>
         </Popup>
       </Marker>

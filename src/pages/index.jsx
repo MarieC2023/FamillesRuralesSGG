@@ -8,7 +8,6 @@ import CardDocument from "@partials/CardDocument";
 
 import entreePeri from '@/assets/entreePeri.webp';
 
-
 import './index.css';
 
 const Index = () => {
@@ -28,17 +27,16 @@ const Index = () => {
                 Un lieu d’accueil convivial pour les enfants de Saint-Georges-des-Gardes
             </h1>
 
-
             <BlocImageTexte
                 imageSrc={entreePeri}
                 imageAlt="Entrée de la périscolaire"
             >
                 <p>
-                    Ici, nous accompagnons les familles au quotidien en proposant des services adaptés aux enfants de 3 à 12 ans :
+                    Ici, nous accompagnons les familles au quotidien en proposant des services adaptés aux enfants de 3 à 12 ans&nbsp;: 
                     accueil périscolaire, centre de loisirs, restaurant scolaire, et bien plus encore.
                 </p>
                 <p>
-                    <strong>Notre mission ?</strong> Offrir aux enfants un cadre sécurisé, convivial et épanouissant, tout en
+                    <strong>Notre mission&nbsp;?</strong> Offrir aux enfants un cadre sécurisé, convivial et épanouissant, tout en
                     soutenant les parents dans l’organisation de leur quotidien.
                 </p>
                 <p>
@@ -46,7 +44,7 @@ const Index = () => {
                     proposer des activités enrichissantes, des repas équilibrés et un accueil chaleureux.
                 </p>
                 <p>
-                    ➡️ Envie d’en savoir plus ? Découvrez nos différentes pages et rejoignez l’aventure Familles Rurales !
+                    ➡️ Envie d’en savoir plus&nbsp;? Découvrez nos différentes pages et rejoignez l’aventure Familles Rurales&nbsp;!
                 </p>
             </BlocImageTexte>
 
@@ -64,7 +62,7 @@ const Index = () => {
                     <CardDocument
                         emoji="🧒"
                         titre="Accueil de Loisirs / Périscolaire"
-                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
                             { href: "/docs/DossierInscription.pdf", label: "Dossier d’inscription" },
                             { href: "/docs/FicheSanitaire.pdf", label: "Fiche sanitaire" }
@@ -74,7 +72,7 @@ const Index = () => {
                     <CardDocument
                         emoji="🍽️"
                         titre="Restaurant scolaire"
-                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
                             { href: "/docs/BulletinInscriptionCantine.pdf", label: "Bulletin d’inscription cantine" },
                             { href: "/docs/ReglementInterieur.pdf", label: "Règlement intérieur" }

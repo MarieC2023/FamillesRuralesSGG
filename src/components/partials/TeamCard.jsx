@@ -10,7 +10,7 @@ function TeamCard({ prenom, fonction, presentation, image, typeImage }) {
       </div>
       {prenom && <h2>{prenom}</h2>}
       <p className="fonction">{fonction}</p>
-      {presentation && <p className="presentation">“{presentation}”</p>}
+      {presentation && <p className="presentation">«&nbsp;{presentation}&nbsp;»</p>}
     </div>
   );
 }

@@ -7,7 +7,6 @@ const FormulaireContact = ({ templateId, titre }) => {
   const [message, setMessage] = useState({ type: "", text: "" });
   const [isSending, setIsSending] = useState(false);
 
-
   const sanitizeInput = (input) => {
     const tempDiv = document.createElement("div");
     tempDiv.textContent = input;
@@ -38,7 +37,7 @@ const FormulaireContact = ({ templateId, titre }) => {
     }
 
     if (messageContent.length > 500) {
-      setMessage({ type: "error", text: "Le message ne doit pas dépasser 500 caractères." });
+      setMessage({ type: "error", text: "Le message ne doit pas dépasser 500&nbsp;caractères." });
       return;
     }
 
@@ -64,7 +63,7 @@ const FormulaireContact = ({ templateId, titre }) => {
         setIsSending(false);
       }, 5000);
     } catch (error) {
-      console.error("Erreur lors de l'envoi :", error);
+      console.error("Erreur lors de l'envoi&nbsp;:", error);
       setMessage({ type: "error", text: "Erreur lors de l'envoi du message." });
       setIsSending(false);
     }
@@ -75,8 +74,9 @@ const FormulaireContact = ({ templateId, titre }) => {
       <h3>{titre}</h3>
       <form ref={formRef} onSubmit={handleSubmit} className="contact-form" id={`contact-form-${templateId}`}>
         <div className="form-group">
-          <label htmlFor={`name-${templateId}`}>Nom et prénom :</label>
-          <input type="text"
+          <label htmlFor={`name-${templateId}`}>Nom et prénom&nbsp;:</label>
+          <input
+            type="text"
             id={`name-${templateId}`}
             name="name"
             required
@@ -85,8 +85,9 @@ const FormulaireContact = ({ templateId, titre }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor={`email-${templateId}`}>Adresse email :</label>
-          <input type="email"
+          <label htmlFor={`email-${templateId}`}>Adresse email&nbsp;:</label>
+          <input
+            type="email"
             id={`email-${templateId}`}
             name="email"
             required
@@ -95,18 +96,19 @@ const FormulaireContact = ({ templateId, titre }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor={`message-${templateId}`}>Message :</label>
-          <textarea id={`message-${templateId}`}
+          <label htmlFor={`message-${templateId}`}>Message&nbsp;:</label>
+          <textarea
+            id={`message-${templateId}`}
             name="message"
             rows="5"
             required
-            placeholder="Écrivez votre message ici..." />
+            placeholder="Écrivez votre message ici…"
+          />
         </div>
 
         <button type="submit" className="bouton mt-3" disabled={isSending}>
-          {isSending ? "Envoi en cours..." : "Envoyer"}
+          {isSending ? "Envoi en cours…" : "Envoyer"}
         </button>
-
 
         {message.text && (
           <div

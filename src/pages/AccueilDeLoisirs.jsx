@@ -29,8 +29,8 @@ const Centre = () => {
                 <title>Centre de loisirs - Familles Rurales Saint-Georges-des-Gardes</title>
                 <meta
                     name="description"
-                    content="Découvrez les activités du centre de loisirs de 
-                    Saint-Georges-des-Gardes pour les enfants pendant les vacances 
+                    content="Découvrez les activités du centre de loisirs de&nbsp; 
+                    Saint-Georges-des-Gardes pour les enfants pendant les vacances&nbsp; 
                     scolaires et les mercredis."
                 />
             </Helmet>
@@ -38,45 +38,41 @@ const Centre = () => {
             <h1 className="text-center mb-5">
                 Accueil de Loisirs — Mercredi et Vacances scolaires
             </h1>
-            {/* Carrousel photos des activités — à intégrer plus tard */}
-            {/* <section className="carrousel-photos mt-5">
-                <h2>En images</h2>
-                <div className="img-placeholder">[Carrousel des photos à venir]</div>
-            </section> */}
+
             <section>
                 <BlocImageTexte
                     imageSrc={[entreePeri, intPeri, extPeri]}
                     imageAlt="Locaux périscolaire"
                 >
                     <p>
-                        Le centre de loisirs accueille les enfants de 3 à 12 ans, tous les mercredis et pendant les vacances scolaires.
+                        Le centre de loisirs accueille les enfants de 3 à 12&nbsp;ans, tous les mercredis et pendant les vacances scolaires.
                     </p>
                     <p>
-                        Encadrés par une équipe d’animateurs diplômés, les enfants découvrent chaque semaine des activités variées :
+                        Encadrés par une équipe d’animateurs diplômés, les enfants découvrent chaque semaine des activités variées&nbsp;:
                         jeux collectifs, ateliers créatifs, sorties, temps calmes...
                     </p>
                     <p>
-                        <strong>L’objectif :</strong> favoriser leur épanouissement, leur créativité et leur autonomie dans un cadre bienveillant.
+                        <strong>L’objectif&nbsp;:</strong> favoriser leur épanouissement, leur créativité et leur autonomie dans un cadre bienveillant.
                     </p>
 
-                    <h2>Mercredis : plusieurs formules possibles</h2>
+                    <h2>Mercredis&nbsp;: plusieurs formules possibles</h2>
                     <ul>
-                        <li><strong>Centre journée :</strong> 9h00 – 17h00</li>
-                        <li><strong>Demi-journée :</strong>
+                        <li><strong>Centre journée&nbsp;:</strong> 9h00 – 17h00</li>
+                        <li><strong>Demi-journée&nbsp;:</strong>
                             <ul>
-                                <li>Matin : 9h00 – 14h00 maximum</li>
-                                <li>Après-midi : de 12h00 ou 13h00 jusqu’à 17h00</li>
+                                <li>Matin&nbsp;: 9h00 – 14h00 maximum</li>
+                                <li>Après-midi&nbsp;: de 12h00 ou 13h00 jusqu’à 17h00</li>
                             </ul>
                         </li>
                         <li>
-                            <strong>Péri-centre :</strong>{' '}
+                            <strong>Péri-centre&nbsp;:</strong>{' '}
                             <NavLink to="/Peri" className="lien-telechargement">
                                 ➔ Plus d’informations sur le péricentre
                             </NavLink>
                         </li>
                     </ul>
                     <p>
-                        ⏳ <strong>Souplesse assurée :</strong> nous nous adaptons aux besoins des familles pour les horaires et la présence en demi-journée.
+                        ⏳ <strong>Souplesse assurée&nbsp;:</strong> nous nous adaptons aux besoins des familles pour les horaires et la présence en demi-journée.
                     </p>
 
                     <h2>Vacances scolaires</h2>
@@ -98,6 +94,7 @@ const Centre = () => {
                 </div>
 
             </section>
+
             {/* Visuels planning activités */}
             <section className="plannings mt-5">
                 <h2>Nos plannings d’activités</h2>
@@ -113,7 +110,6 @@ const Centre = () => {
                 </div>
             </section>
 
-
             {/* Documents d’inscription */}
             <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
@@ -122,7 +118,7 @@ const Centre = () => {
                     <CardDocument
                         emoji="🧒"
                         titre="Accueil de Loisirs"
-                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
                             {
                                 href: "/docs/DossierInscription.pdf",

@@ -12,13 +12,13 @@ const TeamAnim = () => {
         <meta
           name="description"
           content="Rencontrez l’équipe d’animation qui encadre les enfants au centre, 
-          en périscolaire et lors des activités. Dynamisme et bienveillance au rendez-vous !"
+          en périscolaire et lors des activités. Dynamisme et bienveillance au rendez-vous&nbsp;!"
         />
       </Helmet>
 
       <h1>L’équipe salariée</h1>
       <p className="intro">
-        Voici les personnes qui accompagnent vos enfants au quotidien : à la
+        Voici les personnes qui accompagnent vos enfants au quotidien&nbsp;: à la
         cantine, en périscolaire et au centre de loisirs.
       </p>
       <div className="team-grid">

@@ -22,16 +22,15 @@ const PlanningCarrousel = ({ images, titre }) => {
       <h3 className="planning-titre mb-3">{titre}</h3>
 
       <div 
-  className="planning-miniature-container"
-  onClick={() => setOpen(true)}
->
-  <img
-    src={images[0]}
-    alt={`Aperçu du planning ${titre}`}
-    className="planning-miniature"
-  />
-</div>
-
+        className="planning-miniature-container"
+        onClick={() => setOpen(true)}
+      >
+        <img
+          src={images[0]}
+          alt={`Aperçu du planning\u00A0${titre}`} // espace insécable avant le titre
+          className="planning-miniature"
+        />
+      </div>
 
       {open && (
         <div className="modal-overlay" onClick={() => setOpen(false)}>
@@ -43,7 +42,7 @@ const PlanningCarrousel = ({ images, titre }) => {
                 <img
                   key={i}
                   src={img}
-                  alt={`Page ${i + 1} du planning ${titre}`}
+                  alt={`Page\u00A0${i + 1}\u00A0du planning\u00A0${titre}`} // espaces insécables autour des nombres et titres
                   className="carousel-img"
                 />
               ))}

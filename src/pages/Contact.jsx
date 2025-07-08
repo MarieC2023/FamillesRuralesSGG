@@ -13,7 +13,7 @@ const Contact = () => {
                 <title>Contact - Familles Rurales Saint-Georges-des-Gardes</title>
                 <meta
                     name="description"
-                    content="Contactez l’équipe Familles Rurales de Saint-Georges-des-Gardes : 
+                    content="Contactez l’équipe Familles Rurales de Saint-Georges-des-Gardes&nbsp;: 
                     adresse, téléphone, email et formulaire en ligne à votre disposition."
                 />
             </Helmet>
@@ -26,18 +26,18 @@ const Contact = () => {
                 </div>
 
                 <div className="intro-texte">
-                    <p>Merci de sélectionner le formulaire qui correspond à votre demande :</p>
+                    <p>Merci de sélectionner le formulaire qui correspond à votre demande&nbsp;:</p>
                     <p>
-                        <strong>Formulaire Périscolaire / Centre de loisirs :</strong>
+                        <strong>Formulaire Périscolaire / Centre de loisirs&nbsp;:</strong>
                     </p>
                     <p>
                         Pour toute question concernant les horaires, inscriptions,
-                        fonctionnement. <br />
+                        fonctionnement.&nbsp;<br />
                         Pour toute proposition de participation à la vie de l’association
                         (engagement bénévole).
                     </p>
                     <p>
-                        <strong>Formulaire Restaurant scolaire :</strong>
+                        <strong>Formulaire Restaurant scolaire&nbsp;:</strong>
                     </p>
                     <p>
                         Pour toute question relative aux repas, menus, inscriptions ou
@@ -63,11 +63,11 @@ const Contact = () => {
                 <div className="carte-activite">
                     <h3>Périscolaire / Centre de loisirs</h3>
                     <p>
-                        <strong>Téléphone :</strong>{" "}
+                        <strong>Téléphone&nbsp;:</strong>{" "}
                         <span className="coord-highlight">02 41 29 13 09</span>
                     </p>
                     <p>
-                        <strong>Email :</strong>
+                        <strong>Email&nbsp;:</strong>
                         <br />
                         <a href="mailto:ocom3pommes@hotmail.fr" className="coord-link">
                             ocom3pommes@hotmail.fr
@@ -78,11 +78,11 @@ const Contact = () => {
                 <div className="carte-activite">
                     <h3>Restaurant scolaire</h3>
                     <p>
-                        <strong>Téléphone :</strong>{" "}
+                        <strong>Téléphone&nbsp;:</strong>{" "}
                         <span className="coord-highlight">02 41 62 92 64</span>
                     </p>
                     <p>
-                        <strong>Email :</strong>
+                        <strong>Email&nbsp;:</strong>
                         <br />
                         <a
                             href="mailto:alabonnefourchette49@gmail.com"
@@ -96,7 +96,7 @@ const Contact = () => {
                 <div className="carte-activite contact-reseaux">
                     <h3>Réseaux sociaux</h3>
                     <p>
-                        <strong>Suivez-nous sur :</strong>
+                        <strong>Suivez-nous sur&nbsp;:</strong>
                     </p>
                     <div className="footer-icons">
                         <a

@@ -20,7 +20,7 @@ const Peri = () => {
                 <title>Périscolaire - Familles Rurales Saint-Georges-des-Gardes</title>
                 <meta
                     name="description"
-                    content="Infos sur l'accueil périscolaire à Saint-Georges-des-Gardes : 
+                    content="Infos sur l'accueil périscolaire à Saint-Georges-des-Gardes&nbsp;: 
                     horaires, encadrement, activités proposées aux enfants avant et après l'école."
                 />
             </Helmet>
@@ -53,13 +53,13 @@ const Peri = () => {
 
                     <h2>Horaires d’accueil</h2>
                     <ul>
-                        <li><strong>Lundi, mardi, jeudi, vendredi :</strong><br />
-                            Matin : 7h00 – 8h30<br />
-                            Soir : 16h30 – 19h00
+                        <li><strong>Lundi, mardi, jeudi, vendredi&nbsp;:</strong><br />
+                            Matin&nbsp;: 7h00 – 8h30<br />
+                            Soir&nbsp;: 16h30 – 19h00
                         </li>
-                        <li><strong>Mercredis — Péri-centre uniquement :</strong><br />
-                            Matin : 7h30 – 9h00<br />
-                            Soir : 17h00 – 19h00
+                        <li><strong>Mercredis — Péri-centre uniquement&nbsp;:</strong><br />
+                            Matin&nbsp;: 7h30 – 9h00<br />
+                            Soir&nbsp;: 17h00 – 19h00
                         </li>
                     </ul>
 
@@ -81,7 +81,7 @@ const Peri = () => {
                     <CardDocument
                         emoji="🧒"
                         titre="Périscolaire"
-                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
                             {
                                 href: "/docs/DossierInscription.pdf",

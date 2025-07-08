@@ -22,7 +22,7 @@ const RestaurantScolaire = () => {
                 <title>Restauration scolaire - Familles Rurales Saint-Georges-des-Gardes</title>
                 <meta
                     name="description"
-                    content="Tout savoir sur le service de restauration scolaire : 
+                    content="Tout savoir sur le service de restauration scolaire&nbsp;: 
                     menus, inscription, fonctionnement, équilibre alimentaire et sensibilisation."
                 />
             </Helmet>
@@ -46,20 +46,20 @@ const RestaurantScolaire = () => {
 
                     <h2>Appel aux bénévoles</h2>
                     <p>
-                        Vous avez envie de donner un coup de main pour le service, rencontrer les enfants et participer à la vie de l’école ?<br />
-                        Nous serons ravis de vous accueillir parmi nous !
+                        Vous avez envie de donner un coup de main pour le service, rencontrer les enfants et participer à la vie de l’école&nbsp;?<br />
+                        Nous serons ravis de vous accueillir parmi nous&nbsp;!
                     </p>
                 </BlocImageTexte>
 
                 <div className="text-center">
                     <Buttons to="/Contact">Nous contacter</Buttons>
                 </div>
-
             </section>
+
             {/* Visuels planning activités */}
             <section className="plannings mt-5">
                 <h2>Menus et allergènes</h2>
-                <div className="plannings-container d-flex justify-content-center  flex-wrap">
+                <div className="plannings-container d-flex justify-content-center flex-wrap">
                     <PlanningCarrousel
                         titre="Menu de la semaine"
                         images={[menu]}
@@ -70,16 +70,16 @@ const RestaurantScolaire = () => {
                     />
                 </div>
             </section>
+
             {/* Documents d’inscription */}
             <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
 
                 <div className="documents d-flex flex-column flex-md-row justify-content-between gap-4 align-items-start">
-
                     <CardDocument
                         emoji="🍽️"
                         titre="Restaurant scolaire"
-                        description="Téléchargez les documents nécessaires à l’inscription :"
+                        description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
                             {
                                 href: "/docs/BulletinInscriptionCantine.pdf",
@@ -99,7 +99,6 @@ const RestaurantScolaire = () => {
                     />
                 </div>
             </section>
-
         </div>
     );
 };
