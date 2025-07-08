@@ -8,9 +8,12 @@ import { Helmet } from "react-helmet";
 import Buttons from '@partials/Buttons';
 import BlocImageTexte from '@partials/BlocImageTexte';
 import CardDocument from "@partials/CardDocument";
+import PlanningCarrousel from '@partials/PlanningCarrousel';
 
 import extCantine from '@/assets/cantine.webp';
 import intCantine from '@/assets/cantine2.webp';
+import menu from '@/assets/menu/menu.webp';
+import allergenes from '@/assets/menu/allergenes.webp';
 
 const RestaurantScolaire = () => {
     return (
@@ -53,7 +56,20 @@ const RestaurantScolaire = () => {
                 </div>
 
             </section>
-
+            {/* Visuels planning activités */}
+            <section className="plannings mt-5">
+                <h2>Menus et allergènes</h2>
+                <div className="plannings-container d-flex justify-content-center  flex-wrap">
+                    <PlanningCarrousel
+                        titre="Menu de la semaine"
+                        images={[menu]}
+                    />
+                    <PlanningCarrousel
+                        titre="Tableau des allergènes"
+                        images={[allergenes]}
+                    />
+                </div>
+            </section>
             {/* Documents d’inscription */}
             <section className="documents-section mt-5">
                 <h2>Documents pour inscriptions</h2>
