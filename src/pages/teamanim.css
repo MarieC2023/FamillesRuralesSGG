@@ -37,8 +37,8 @@
 
 /* === IMAGE === */
 .team-image {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 170px;
   margin-bottom: 0.8rem;
   overflow: hidden;
   display: flex;
@@ -60,13 +60,11 @@
   border-radius: 0;
 }
 
-/* === NOM === */
-.nom {
-  font-weight: bold;
-  font-size: 1rem;
-  color: var(--color-text);
+/* === NOM ===*/
+.prenom {
+  margin-top: 0.1rem;
   margin-bottom: 0.3rem;
-}
+} 
 
 /* === FONCTION === */
 .fonction {
@@ -118,8 +116,8 @@
   }
 
   .team-image {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 128px;
   }
 
   .fonction {
@@ -144,7 +142,7 @@
 
   .team-image {
     width: 70px;
-    height: 70px;
+    height: 100px;
   }
 
   .fonction {
@@ -160,7 +158,7 @@
 @media (max-width: 320px) {
   .team-image {
     width: 60px;
-    height: 60px;
+    height: 85px; 
   }
 
   .fonction {

@@ -2,14 +2,14 @@
   {
     "prenom": "Kévin",
     "fonction": "Directeur",
-    "presentation": "blablabla",
+    "presentation": "La chaleur est dans le cœur",
     "image": "kevin.webp",
     "typeImage": "photo"
   },
   {
     "prenom": "Sarah",
     "fonction": "Animatrice (midi, périscolaire et mercredi)",
-    "presentation": "blablabla",
+    "presentation": "Petite par la taille, mais grande par le sourire",
     "image": "sarah.webp",
     "typeImage": "photo"
   },
@@ -45,14 +45,14 @@
     "prenom": "Laurence",
     "fonction": "Animatrice (temps du midi)",
     "presentation": "blablabla",
-    "image": "laurence.webp",
-    "typeImage": "photo"
+    "image": "illustration1.webp",
+    "typeImage": "illustration"
   },
   {
     "prenom": "Estelle",
     "fonction": "Animatrice (temps périscolaire)",
     "presentation": "blablabla",
-    "image": "illustration1.webp",
-    "typeImage": "illustration"
+    "image": "estelle.webp",
+    "typeImage": "photo"
   }
 ]
