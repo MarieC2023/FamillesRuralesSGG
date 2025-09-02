@@ -16,42 +16,42 @@
   {
     "prenom": "Audrey",
     "fonction": "Animatrice et responsable de la restauration scolaire",
-    "presentation": "blablabla",
+    "presentation": "A COMPLÉTER",
     "image": "audrey.webp",
     "typeImage": "photo"
   },
   {
     "prenom": "Sandra",
     "fonction": "Cuisinière",
-    "presentation": "blablabla",
+    "presentation": "A COMPLÉTER",
     "image": "sandra.webp",
     "typeImage": "photo"
   },
   {
     "prenom": "Maryline",
     "fonction": "Animatrice (midi et mercredi)",
-    "presentation": "blablabla",
+    "presentation": "A COMPLÉTER",
     "image": "maryline.webp",
     "typeImage": "photo"
   },
   {
     "prenom": "Jessica",
     "fonction": "Animatrice (temps du midi)",
-    "presentation": "blablabla",
+    "presentation": "A COMPLÉTER",
     "image": "jessica.webp",
     "typeImage": "photo"
   },
   {
     "prenom": "Laurence",
     "fonction": "Animatrice (temps du midi)",
-    "presentation": "blablabla",
+    "presentation": "ICI exemple avec une illustration à la place d'une photo",
     "image": "illustration1.webp",
     "typeImage": "illustration"
   },
   {
     "prenom": "Estelle",
     "fonction": "Animatrice (temps périscolaire)",
-    "presentation": "blablabla",
+    "presentation": "A COMPLÉTER",
     "image": "estelle.webp",
     "typeImage": "photo"
   }
