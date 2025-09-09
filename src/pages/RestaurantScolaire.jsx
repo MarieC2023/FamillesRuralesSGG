@@ -89,6 +89,14 @@ const RestaurantScolaire = () => {
                                 href: "/docs/ReglementInterieur.pdf",
                                 label: "Règlement intérieur",
                             },
+                            {
+                                href: "/docs/RegleDeVie.pdf",
+                                label: "Règles de vie",
+                            },
+                            {
+                                href: "/docs/DroitALimage.pdf",
+                                label: "Droit à l'image",
+                            },
                         ]}
                     />
 

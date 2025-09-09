@@ -66,7 +66,7 @@ const Centre = () => {
                         </li>
                         <li>
                             <strong>Péri-centre&nbsp;:</strong>{' '}
-                            <NavLink to="/Peri" className="lien-telechargement">
+                            <NavLink to="/Periscolaire" className="lien-telechargement">
                                 ➔ Plus d’informations sur le péricentre
                             </NavLink>
                         </li>
