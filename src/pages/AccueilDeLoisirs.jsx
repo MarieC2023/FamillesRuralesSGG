@@ -121,6 +121,10 @@ const Centre = () => {
                         description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
                             {
+                                href: "/docs/CouponInscription.pdf",
+                                label: "👉 Coupon d'inscription pour les Vacances de la Toussaint 📝",
+                            },
+                            {
                                 href: "/docs/DossierInscription.pdf",
                                 label: "Dossier d’inscription",
                             },
