@@ -14,7 +14,7 @@ import entreePeri from '@/assets/entreePeri.webp';
 import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
 
-// import merc1 from '@/assets/planning/merc1.webp';
+import merc1 from '@/assets/planning/merc1.webp';
 import merc2 from '@/assets/planning/merc2.webp';
 import vac1 from '@/assets/planning/vac1.webp';
 import vac2 from '@/assets/planning/vac2.webp';
@@ -101,7 +101,7 @@ const Centre = () => {
                 <div className="plannings-container d-flex justify-content-center  flex-wrap">
                     <PlanningCarrousel
                         titre="Planning des mercredis"
-                        images={[merc2]}
+                        images={[merc1, merc2]}
                     />
                     <PlanningCarrousel
                         titre="Planning des vacances scolaires"
@@ -122,7 +122,7 @@ const Centre = () => {
                         fichiers={[
                             {
                                 href: "/docs/CouponInscription.pdf",
-                                label: "👉 Coupon d'inscription pour les Vacances de la Toussaint 📝",
+                                label: "👉 Coupon d'inscription pour les Vacances de décembre 📝",
                             },
                             {
                                 href: "/docs/DossierInscription.pdf",
