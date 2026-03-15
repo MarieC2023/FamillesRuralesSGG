@@ -101,7 +101,7 @@ const Centre = () => {
                 <div className="plannings-container d-flex justify-content-center  flex-wrap">
                     <PlanningCarrousel
                         titre="Planning des mercredis"
-                        images={[merc2]}
+                        images={[merc1, merc2]}
                     />
                     <PlanningCarrousel
                         titre="Planning des vacances scolaires"
