@@ -122,7 +122,7 @@ const Centre = () => {
                         fichiers={[
                             {
                                 href: "/docs/CouponInscription.pdf",
-                                label: "👉 Coupon d'inscription pour les Vacances de février 📝",
+                                label: "👉 Coupon d'inscription pour les Vacances d'Avril 📝",
                             },
                             {
                                 href: "/docs/DossierInscription.pdf",
