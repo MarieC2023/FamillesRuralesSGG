@@ -14,6 +14,7 @@ import extCantine from '@/assets/cantine.webp';
 import intCantine from '@/assets/cantine2.webp';
 import menu from '@/assets/menu/menu.webp';
 import allergenes from '@/assets/menu/allergenes.webp';
+import allergenes2 from '@/assets/menu/allergenes2.webp';
 
 const RestaurantScolaire = () => {
     return (
@@ -66,7 +67,7 @@ const RestaurantScolaire = () => {
                     />
                     <PlanningCarrousel
                         titre="Tableau des allergènes"
-                        images={[allergenes]}
+                        images={[allergenes, allergenes2]}
                     />
                 </div>
             </section>
