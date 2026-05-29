@@ -126,10 +126,10 @@ const Centre = () => {
                         titre="Accueil de Loisirs"
                         description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
-                            /* {
+                             {
                                 href: "/docs/CouponInscription.pdf",
-                                label: "👉 Coupon d'inscription pour les Vacances d'Avril 📝",
-                            },*/
+                                label: "👉 Coupon d'inscription pour les Vacances d'Été 📝",
+                            },
                             {
                                 href: "/docs/DossierInscription.pdf",
                                 label: "Dossier d’inscription",
