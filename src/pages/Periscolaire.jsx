@@ -92,8 +92,8 @@ const Peri = () => {
                                 label: "Fiche sanitaire",
                             },
                             {
-                                href: "/docs/ReglementInterieurPeri.pdf",
-                                label: "Règlement intérieur de la périscolaire",
+                                href: "/docs/ReglementInterieurCentre.pdf",
+                                label: "Règlement intérieur de l'accueil périscolaire",
                             },
                         ]}
                     />
