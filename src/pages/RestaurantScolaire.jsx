@@ -82,6 +82,10 @@ const RestaurantScolaire = () => {
                         titre="Restaurant scolaire"
                         description="Téléchargez les documents nécessaires à l’inscription&nbsp;:"
                         fichiers={[
+                             {
+                                href: "/docs/FormulaireAdhesionFamillesRurales.pdf",
+                                label: "Formulaire d'adhésion à l'association Familles Rurales",
+                            },
                             {
                                 href: "/docs/BulletinInscriptionCantine.pdf",
                                 label: "Bulletin d’inscription cantine",
