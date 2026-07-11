@@ -15,7 +15,7 @@ import intPeri from '@/assets/peri1.webp';
 import extPeri from '@/assets/peri2.webp';
 
 //import merc1 from '@/assets/planning/merc1.webp';
-import merc2 from '@/assets/planning/merc2.webp';
+//import merc2 from '@/assets/planning/merc2.webp';
 import vac1 from '@/assets/planning/vac1.webp';
 import vac2 from '@/assets/planning/vac2.webp';
 import vac3 from '@/assets/planning/vac3.webp';
@@ -101,10 +101,10 @@ const Centre = () => {
             <section className="plannings mt-5">
                 <h2>Nos plannings d’activités</h2>
                 <div className="plannings-container d-flex justify-content-center  flex-wrap">
-                    <PlanningCarrousel
+                    {/*<PlanningCarrousel
                         titre="Planning des mercredis"
                         images={[merc2]}
-                    />
+                    />*/}
                     <PlanningCarrousel
                         titre="Planning des vacances scolaires"
                         images={[vac1, vac2, vac3, vac4]}
