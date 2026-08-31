@@ -13,7 +13,7 @@ import PlanningCarrousel from '@partials/PlanningCarrousel';
 import extCantine from '@/assets/cantine.webp';
 import intCantine from '@/assets/cantine2.webp';
 import menu from '@/assets/menu/menu.webp';
-//import allergenes from '@/assets/menu/allergenes.webp';
+import allergenes from '@/assets/menu/allergenes.webp';
 //import allergenes2 from '@/assets/menu/allergenes2.webp';
 
 const RestaurantScolaire = () => {
@@ -58,7 +58,7 @@ const RestaurantScolaire = () => {
             </section>
 
             {/* Visuels planning activités */}
-            {/*<section className="plannings mt-5">
+            <section className="plannings mt-5">
                 <h2>Menus et allergènes</h2>
                 <div className="plannings-container d-flex justify-content-center flex-wrap">
                     <PlanningCarrousel
@@ -70,9 +70,9 @@ const RestaurantScolaire = () => {
                         images={[allergenes]}
                     />
                 </div>
-            </section>*/}
+            </section>
 
-            <section className="plannings mt-5">
+            {/* <section className="plannings mt-5">
                 <h2>Menus et allergènes</h2>
                 <div className="plannings-container d-flex justify-content-center flex-wrap">
                     <PlanningCarrousel
@@ -80,7 +80,7 @@ const RestaurantScolaire = () => {
                         images={[menu]}
                     />
                 </div>
-            </section>
+            </section> */}
 
 
             {/* Documents d’inscription */}
